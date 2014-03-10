@@ -29,15 +29,15 @@ module.exports = function(grunt) {
             dist: {
                 src: [
                     'app/bower_components/jquery/jquery.js',
-                    'app/javascripts/main.js'
+                    'app/js/main.js'
                 ],
-                dest: 'app/javascripts/production.js',
+                dest: 'app/js/production.js',
             }
         },
         uglify: {
             build: {
-                src: 'app/javascripts/production.js',
-                dest: 'app/javascripts/production.min.js'
+                src: 'app/js/production.js',
+                dest: 'app/js/production.min.js'
             }
         },
         stylus: {
