@@ -1,4 +1,4 @@
-test-express4-app
+the-aberdeens
 ===============
 
-App orientada a dispositivos móviles contruida para aprender express 4
+Rediseño del sitio de The Aberdeens. Corre sobre nodejs (express 4.x)
