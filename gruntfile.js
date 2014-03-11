@@ -29,6 +29,7 @@ module.exports = function(grunt) {
             dist: {
                 src: [
                     'app/bower_components/jquery/jquery.js',
+                    'app/bower_components/bootstrap/bootstrap.js',
                     'app/js/main.js'
                 ],
                 dest: 'app/js/production.js',
@@ -46,6 +47,7 @@ module.exports = function(grunt) {
                     use: [
                         require('nib')
                     ],
+                    "include css": true,
                 },
                 files: {
                     'app/css/production.css': 'app/css/main.styl'
@@ -65,7 +67,7 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
                 files: ['app/js/vendor/*.js', 'app/js/*.js', 'app/css/*.styl'],
-                tasks: ['default'],
+                tasks: ['build'],
                 options: {
                     spawn: false,
                 },

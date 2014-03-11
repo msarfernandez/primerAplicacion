@@ -1,6 +1,6 @@
 {
-  "name": "test-express4-app",
-  "description": "A tiny mobile app using express 4 (Only for test proposes)",
+  "name": "the-aberdeens",
+  "description": "Rediseño del sitio de The Aberdeens. Corre sobre nodejs (express 4.x)",
   "version": "0.0.1",
   "dependencies": {
     "express": "^4.0.0-rc2",
@@ -10,11 +10,11 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/durancristhian/test-express4-app.git"
+    "url": "https://github.com/durancristhian/the-aberdeens.git"
   },
   "author": "Duran Cristhian",
   "license": "MIT",
-  "homepage": "https://github.com/durancristhian/test-express4-app",
+  "homepage": "https://github.com/durancristhian/the-aberdeens",
   "engines": {
     "node": "0.10.26"
   },
@@ -26,7 +26,6 @@
     "nib": "~1.0.2",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-jshint": "~0.8.0",
-    "bower": "~1.2.8",
     "grunt-bower-task": "~0.3.4",
     "grunt-encode-images": "^0.1.4"
   }

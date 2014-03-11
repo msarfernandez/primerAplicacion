@@ -8,7 +8,7 @@ server.engine('swig', swig.renderFile);
 server.set('view engine', 'swig');
 server.set('views', __dirname + '/app/views');
 
-server.use(favicon(__dirname + '/app/assets/images/favicon.ico'));
+server.use(favicon(__dirname + '/app/assets/favicon.ico'));
 
 server.use(express.static(__dirname + '/app'));
 

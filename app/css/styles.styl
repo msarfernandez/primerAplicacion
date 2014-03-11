@@ -1,3 +1,71 @@
-body
-	background #d7d7d7
+body, html
 	color #242424
+	font-family 'Open Sans', sans-serif
+	font-size 16px
+	height 100%
+	letter-spacing 2px
+	line-height 1.5em
+	text-align center
+
+	.site-wrapper
+		display table
+		height 100%
+		width 100%
+
+		.cover
+			height 100%
+			left 0
+			position absolute
+			top 0
+			width 100%
+			z-index 0
+
+			img
+				animation animarBackground 15s ease-in-out infinite alternate
+				display none
+				height 100%
+				left 0
+				position absolute
+				top 0
+				width 100%
+
+				&.active
+					display block
+
+		.site-wrapper-inner
+			display table-cell
+			height 100%
+			position relative
+			vertical-align middle
+			width 100%
+
+			a.btn span
+				display inline-block
+				vertical-align middle
+
+				&.btn-text
+					font-size .8em
+					margin 2px 0 0 10px
+
+			h1
+				font-weight bold
+				margin 0 0 1em 0
+
+			p.lead
+				margin 0
+
+			p.sub-heading
+				font-style italic
+				margin-bottom 1em
+
+@keyframes animarBackground {
+	from {
+		transform: scale(1) rotate(0deg);
+	}
+	35% {
+		transform: scale(1.1) rotate(-2deg);
+	}
+	to {
+		transform: scale(1.2) rotate(5deg);
+	}
+}
