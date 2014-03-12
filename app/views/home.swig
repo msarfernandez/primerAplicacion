@@ -5,9 +5,7 @@
 
     <div class="cover">
         
-        <img src="/assets/images/cover/cover0.jpg" alt="background 0" class="active">
-        <img src="/assets/images/cover/cover1.jpg" alt="background 1">
-        <img src="/assets/images/cover/cover2.jpg" alt="background 2">
+        <img src="/assets/images/cover.jpg" alt="background image">
     </div>
 
     <div class="site-wrapper-inner">
@@ -16,10 +14,49 @@
        	<p class="lead sub-heading">Este sitio corre sobre node.js (express v4.0.0-rc2).</p>
        	<p class="lead">
        		<a href="http://www.youtube.com/watch?v=cy10f9M_ugw" class="btn btn-lg btn-default" target="_blank">
-       			<span class="glyphicon glyphicon-play-circle"></span>
-                <span class="btn-text">Mirá nuetro video</span>
+       			<span class="icon icon-play"></span>
+                <span class="btn-text">Mirá nuestro video</span>
        		</a>
        	</p>
     </div>
 </div>
+
+<ul id="nav" class="nav nav-pills nav-stacked">
+    <li>
+        <a href="#">
+            <span class="icon icon-home"></span>
+            <span class="text">Home</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="icon icon-headphones"></span>
+            <span class="text">Discografía</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="icon icon-calendar"></span>
+            <span class="text">Eventos</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="icon icon-accessibility"></span>
+            <span class="text">Integrantes</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="icon icon-facebook"></span>
+            <span class="text">Danos un like</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="icon icon-twitter"></span>
+            <span class="text">Síguenos</span>
+        </a>
+    </li>
+</ul>
 {% endblock %}

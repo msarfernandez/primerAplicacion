@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                     layout: 'byComponent',
                     install: true,
                     verbose: true,
-                    cleanBowerDir: true
+                    cleanBowerDir: true,
                 }
             }
         },
