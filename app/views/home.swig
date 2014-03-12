@@ -13,7 +13,7 @@
    		<h1 class="cover-heading">The Aberdeens</h1>
        	<p class="lead sub-heading">Este sitio corre sobre node.js (express v4.0.0-rc2).</p>
        	<p class="lead">
-       		<a href="https://www.youtube.com/watch?v=Qby1uFX78kg" class="btn btn-lg btn-default" target="_blank">
+       		<a href="http://www.youtube.com/v/Qby1uFX78kg?fs=1&amp;autoplay=1" id="show-video" class="btn btn-lg btn-default">
        			<span class="icon icon-play"></span>
                 <span class="btn-text">Mirá nuestro video</span>
        		</a>
@@ -23,7 +23,7 @@
 
 <ul id="nav" class="nav nav-pills nav-stacked">
     <li>
-        <a href="#">
+        <a href="/">
             <span class="icon icon-home"></span>
             <span class="text">Home</span>
         </a>
@@ -47,13 +47,13 @@
         </a>
     </li>
     <li>
-        <a href="#">
+        <a href="https://www.facebook.com/LosAberdeensBand" target="_blank">
             <span class="icon icon-facebook"></span>
             <span class="text">Danos un like</span>
         </a>
     </li>
     <li>
-        <a href="#">
+        <a href="https://twitter.com/LosAberdeens" target="_blank">
             <span class="icon icon-twitter"></span>
             <span class="text">Síguenos</span>
         </a>
