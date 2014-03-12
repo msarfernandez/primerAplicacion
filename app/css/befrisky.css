@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Befrisky";
+    src: url("../fonts/befrisky/befrisky.eot");
+    src: url("../fonts/befrisky/befrisky.eot") format("embedded-opentype"),
+         url("../fonts/befrisky/befrisky.woff") format("woff"),
+         url("../fonts/befrisky/befrisky.ttf") format("truetype"),
+         url("../fonts/befrisky/befrisky.svg#BenguiatFriskyRegular") format("svg");
+}

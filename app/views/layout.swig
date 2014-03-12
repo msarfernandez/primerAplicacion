@@ -6,6 +6,7 @@
     <meta name="description" content="Rediseño del sitio de The Aberdeens. Corre sobre nodejs (express 4.x)">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/production.css">
+	<link rel="shortcut icon" href="/assets/favicon.ico?v=2" />
 
 	<!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

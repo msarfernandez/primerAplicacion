@@ -13,7 +13,7 @@
    		<h1 class="cover-heading">The Aberdeens</h1>
        	<p class="lead sub-heading">Este sitio corre sobre node.js (express v4.0.0-rc2).</p>
        	<p class="lead">
-       		<a href="http://www.youtube.com/watch?v=cy10f9M_ugw" class="btn btn-lg btn-default" target="_blank">
+       		<a href="https://www.youtube.com/watch?v=Qby1uFX78kg" class="btn btn-lg btn-default" target="_blank">
        			<span class="icon icon-play"></span>
                 <span class="btn-text">Mirá nuestro video</span>
        		</a>
