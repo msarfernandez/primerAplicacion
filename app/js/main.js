@@ -1,6 +1,6 @@
 $(document).on("ready", function(){
 
-	console.log("CDuran: Funciona!");
+	console.log("Funciona!");
 
 	// Muestra el video
 	$("#show-video").fancybox({
@@ -8,7 +8,7 @@ $(document).on("ready", function(){
 		'autoScale'		: false,
 		'transitionIn'	: 'none',
 		'transitionOut'	: 'none',
-		'title'			: "The Aberdeens - I Wanna Be Alone",
+		'title'			: $(this).title,
 		'width'			: 853,
 		'height'		: 480,
 		'type'			: 'swf',
@@ -16,5 +16,19 @@ $(document).on("ready", function(){
 			'wmode'				: 'transparent',
 			'allowfullscreen'	: 'true'
 		}
+	});
+
+	// Clic en algunos items del menú que despliegan contenido
+	$(".fly").on("click", function (event) {
+		
+		// Se detiene el evento para que no cambie la url
+		event.preventDefault();
+
+		var id = $(this).attr("href");
+
+		// Se muestra el contenido
+		$("body").animate({ 
+			scrollTop: $(id).offset().top
+		}, 1000);
 	});
 });

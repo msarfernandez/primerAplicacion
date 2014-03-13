@@ -11110,7 +11110,7 @@ e=f(this),c=this.selector||"",k=function(g){var h=f(this).blur(),j=d,k,l;!g.ctrl
 d[0].offsetTop||15===d[0].offsetTop;d.remove();a.fixedPosition=e}f.extend(b.defaults,{scrollbarWidth:f.scrollbarWidth(),fixed:f.support.fixedPosition,parent:f("body")});a=f(r).width();J.addClass("fancybox-lock-test");d=f(r).width();J.removeClass("fancybox-lock-test");f("<style type='text/css'>.fancybox-margin{margin-right:"+(d-a)+"px;}</style>").appendTo("head")})})(window,document,jQuery);
 $(document).on("ready", function(){
 
-	console.log("CDuran: Funciona!");
+	console.log("Funciona!");
 
 	// Muestra el video
 	$("#show-video").fancybox({
@@ -11118,7 +11118,7 @@ $(document).on("ready", function(){
 		'autoScale'		: false,
 		'transitionIn'	: 'none',
 		'transitionOut'	: 'none',
-		'title'			: "The Aberdeens - I Wanna Be Alone",
+		'title'			: $(this).title,
 		'width'			: 853,
 		'height'		: 480,
 		'type'			: 'swf',
@@ -11126,5 +11126,19 @@ $(document).on("ready", function(){
 			'wmode'				: 'transparent',
 			'allowfullscreen'	: 'true'
 		}
+	});
+
+	// Clic en algunos items del menú que despliegan contenido
+	$(".fly").on("click", function (event) {
+		
+		// Se detiene el evento para que no cambie la url
+		event.preventDefault();
+
+		var id = $(this).attr("href");
+
+		// Se muestra el contenido
+		$("body").animate({ 
+			scrollTop: $(id).offset().top
+		}, 1000);
 	});
 });

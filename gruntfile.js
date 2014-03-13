@@ -85,6 +85,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', []);
-    grunt.registerTask('build', ['jshint', 'concat', 'uglify', 'stylus', 'encodeImages']);
+    grunt.registerTask('build', ['jshint', 'concat', 'stylus', 'encodeImages']);
     grunt.registerTask('release', ['jshint', 'bower', 'concat', 'uglify', 'stylus', 'encodeImages']);
 };

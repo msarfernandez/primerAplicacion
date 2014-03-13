@@ -15,7 +15,7 @@
 
 	{% block content %}{% endblock %}
 
-	<script type="text/javascript" src="/js/production.min.js"></script>
+	<script type="text/javascript" src="/js/production.js"></script>
 	
 </body>
 </html>
