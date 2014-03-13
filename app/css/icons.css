@@ -41,6 +41,9 @@
 .icon-facebook:before {
 	content: "\e605";
 }
+.icon-youtube:before {
+	content: "\e607";
+}
 .icon-play:before {
 	content: "\e606";
 }

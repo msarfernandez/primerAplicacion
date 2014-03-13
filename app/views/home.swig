@@ -30,6 +30,12 @@
             </a>
         </li>
         <li>
+            <a href="#whoweare" class="fly">
+                <span class="icon icon-accessibility"></span>
+                <span class="text">Nosotros</span>
+            </a>
+        </li>
+        <li>
             <a href="#events" class="fly">
                 <span class="icon icon-calendar"></span>
                 <span class="text">Eventos</span>
@@ -39,12 +45,6 @@
             <a href="#discography" class="fly">
                 <span class="icon icon-headphones"></span>
                 <span class="text">Discografía</span>
-            </a>
-        </li>
-        <li>
-            <a href="#members" class="fly">
-                <span class="icon icon-accessibility"></span>
-                <span class="text">Integrantes</span>
             </a>
         </li>
         <li>
@@ -59,23 +59,29 @@
                 <span class="text">Síguenos</span>
             </a>
         </li>
+        <li>
+            <a href="http://www.youtube.com/user/losaberdeens" target="_blank">
+                <span class="icon icon-youtube"></span>
+                <span class="text">Nuestro canal</span>
+            </a>
+        </li>
     </ul>
 </nav>
 
 <div class="content">
     
+    <div id="whoweare">
+        <h2>Nosotros</h2>
+    </div>
     <div id="events">
         <h2>Eventos</h2>
     </div>
     <div id="discography">
         <h2>Discografía</h2>
     </div>
-    <div id="members">
-        <h2>Integrantes</h2>
-    </div>
 </div>
 
 <footer>
-    <p>Buenos Aires, Argentina</p>
+    <p>The Aberdeens- Buenos Aires, Argentina</p>
 </footer>
 {% endblock %}
