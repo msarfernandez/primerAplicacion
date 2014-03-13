@@ -30,15 +30,15 @@
             </a>
         </li>
         <li>
-            <a href="#discography" class="fly">
-                <span class="icon icon-headphones"></span>
-                <span class="text">Discografía</span>
-            </a>
-        </li>
-        <li>
             <a href="#events" class="fly">
                 <span class="icon icon-calendar"></span>
                 <span class="text">Eventos</span>
+            </a>
+        </li>
+        <li>
+            <a href="#discography" class="fly">
+                <span class="icon icon-headphones"></span>
+                <span class="text">Discografía</span>
             </a>
         </li>
         <li>
@@ -64,14 +64,18 @@
 
 <div class="content">
     
-    <div id="discography">
-        <h2>Discografía</h2>
-    </div>
     <div id="events">
         <h2>Eventos</h2>
+    </div>
+    <div id="discography">
+        <h2>Discografía</h2>
     </div>
     <div id="members">
         <h2>Integrantes</h2>
     </div>
 </div>
+
+<footer>
+    <p>Buenos Aires, Argentina</p>
+</footer>
 {% endblock %}
