@@ -1,144 +1,124 @@
 body, html
+	background #fff
 	color #242424
-	font-family 'Open Sans', sans-serif
+	font-family "Open Sans", sans-serif
 	font-size 16px
 	height 100%
 	letter-spacing 2px
 	line-height 1.5em
 	text-align center
 
-	footer
-		background #242424
-		color #fff
-		font-size .8em
-		padding 50px 0
-		text-align center
+button.navbar-toggle
+	background rgba(0, 0, 0, .5)
+	color #fff
+	margin-left 10px
+	padding 5px 10px
 
-		p
-			margin 0
+	span
+		display inline-block
+		vertical-align middle
 
-	nav
-		background rgba(0, 0, 0, .7)
-		border-radius 5px
-		font-size .9em
-		position fixed
-		right -150px
-		text-align left
-		transition right .5s ease-in-out
-		top 75px
-		width 200px
-
-		&:hover
-			right -5px
-
-		.nav li
-			height 55px
-
-			a
-				color #fff
-				padding 1em .1em 1em 1em
-
-				&:hover
-					background rgba(0, 0, 0, .8)
-
-				&:hover .icon
-					transform scale(1.3)
-
-				span
-					display inline-block
-					vertical-align middle
-
-				.icon-facebook
-					color #3b5998
-
-				.icon-twitter
-					color #4099ff
-
-				.icon-youtube
-					color #e52d27
-
-				.text
-					width 75%
-
-	.content #discography, .content #whoweare
-		background #eee
-
-	.content #discography, .content #whoweare, .content #events
-		min-height 500px
-		padding 50px 0
-		
-	.content #events, .content #whoweare
-		border-bottom 1px solid #bbb
-
-	.icon
+	.icon-arrow-down
 		font-size 1.25em
-		margin 0 5% 0 2%
-		transition all .2s ease-in-out
+		transition all .3s ease-in-out
 
-	.site-wrapper
-		display table
-		height 100%
+		.rotate
+			transform rotate(180deg)
+
+footer
+	background #242424
+	color #fff
+	font-size .8em
+	padding 50px 0
+	text-align center
+
+	p
+		margin 0
+
+header
+	min-height 90%
+	overflow hidden
+	position relative
+
+	.hero-container
+		animation animarBackground 30s ease-in-out infinite alternate
+		background url("../assets/images/cover.jpg")
+		background-position center center
+		background-repeat no-repeat
+		background-size cover
+		left 0
+		min-height 100%
+		min-width 100%
+		position absolute
+		top 0
+
+	.hero-content
+		color #fff
+		position absolute
+		top 25%
 		width 100%
+		z-index 0
 
-		.background
-			height 100%
-			left 0
-			overflow hidden
-			position absolute
-			top 0
-			width 100%
-			z-index 0
+		a
+			margin-top 25px
+			text-shadow 0px 0px 3px rgba(0, 0, 0, .5)
 
-			img
-				animation animarBackground 30s ease-in-out infinite alternate
-				height 100%
-				left 0
-				position absolute
-				top 0
-				width 100%
+		h1
+			font-family "Befrisky"
+			font-size 3.5em
+			text-shadow 2px 1px 3px rgba(0, 0, 0, .8)
 
-		.site-wrapper-inner
+		p.sub-heading
+			font-style italic
+			text-shadow 2px 1px 3px rgba(0, 0, 0, .5)
+
+ul.nav
+	background rgba(0, 0, 0, .5)
+	border-radius 4px
+	padding 0
+	position absolute
+	z-index 100
+
+	li
+		text-align left
+
+		&:hover a
+			border-radius 4px
+			background rgba(0, 0, 0, .8)
+
+		a
 			color #fff
-			display table-cell
-			height 100%
-			position relative
+			padding 15px
+
+		a > span
+			display inline-block
 			vertical-align middle
-			width 100%
 
-			a.btn
-				background transparent
-				border 2px solid #fff
-				color #fff
-				display inline-block
-				margin-top 50px
-				padding 20px 0 22px
-				transition all .3s ease-in-out
-				width 300px
+.btn > span
+	display inline-block
+	vertical-align middle
 
-				&:hover
-					transform scale(1.15)
+#discography, #whoweare
+	background #eee
 
-			a.btn span
-				display inline-block
-				vertical-align middle
+#discography, #whoweare, #events
+	font-size .9em
+	padding-bottom 30px
+	text-align left
 
-				&.btn-text
-					font-size .9em
-					margin-top 2px
+	h2
+		font-size 1.5em
+		
+#events, #whoweare
+	border-bottom 1px solid #bbb
 
-			h1
-				font-family "Befrisky"
-				font-size 6em
-				margin 0 0 25px 0
-				text-shadow 2px 1px 3px rgba(0, 0, 0, .8)
+.navbar-collapse
+	box-shadow none
 
-			p.lead
-				margin 0
-
-			p.sub-heading
-				font-style italic
-				margin-bottom 1em
-				text-shadow 2px 1px 3px rgba(0, 0, 0, .5)
+[class^="icon-"], [class*=" icon-"]
+	color #fff
+	font-size 1.25em
+	margin-right 10px
 
 @keyframes animarBackground {
 	from {

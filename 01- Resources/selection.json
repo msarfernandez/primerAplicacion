@@ -4,29 +4,6 @@
 		{
 			"icon": {
 				"paths": [
-					"M512 64l-512 512 96 96 96-96 64 384h192v-192h128v192h192l64-384 96 96 96-96-512-512zM512 474.508c-49.988 0-90.512-40.52-90.512-90.508s40.524-90.51 90.512-90.51c49.984 0 90.51 40.524 90.51 90.51 0 49.988-40.526 90.508-90.51 90.508z"
-				],
-				"tags": [
-					"home",
-					"house",
-					"building"
-				],
-				"grid": 16
-			},
-			"properties": {
-				"id": 2,
-				"order": 1,
-				"prevSize": 32,
-				"code": 58880,
-				"name": "home",
-				"ligatures": ""
-			},
-			"setIdx": 0,
-			"iconIdx": 2
-		},
-		{
-			"icon": {
-				"paths": [
 					"M192 578.286v443.43c10.454 1.496 21.134 2.286 32 2.286h32v-448.002h-32c-10.866 0-21.546 0.79-32 2.286zM768 576v448h32c10.868 0 21.546-0.79 32-2.286v-443.428c-10.454-1.496-21.132-2.286-32-2.286h-32zM1024 512c0-282.77-229.23-512-512-512s-512 229.23-512 512c0 61.418 10.828 120.306 30.656 174.874-19.472 33.202-30.656 71.852-30.656 113.126 0 89.354 52.326 166.478 128 202.432v-404.864c-20.126 9.562-38.58 22.060-54.858 36.904-5.992-29.22-9.142-59.478-9.142-90.472 0-247.424 200.576-448 448-448s448 200.576 448 448c0 30.994-3.148 61.252-9.142 90.472-16.28-14.844-34.73-27.342-54.858-36.904v404.864c75.676-35.954 128-113.078 128-202.432 0-41.274-11.184-79.924-30.656-113.126 19.828-54.568 30.656-113.456 30.656-174.874z"
 				],
 				"tags": [
@@ -36,18 +13,19 @@
 					"song",
 					"audio"
 				],
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"id": 17,
-				"order": 2,
+				"order": 1,
 				"prevSize": 32,
 				"code": 58881,
 				"name": "headphones",
 				"ligatures": ""
 			},
 			"setIdx": 0,
-			"iconIdx": 17
+			"iconIdx": 1
 		},
 		{
 			"icon": {
@@ -61,18 +39,19 @@
 					"time",
 					"day"
 				],
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"id": 78,
-				"order": 3,
+				"order": 2,
 				"prevSize": 32,
 				"code": 58882,
 				"name": "calendar",
 				"ligatures": ""
 			},
 			"setIdx": 0,
-			"iconIdx": 78
+			"iconIdx": 2
 		},
 		{
 			"icon": {
@@ -82,18 +61,19 @@
 				"tags": [
 					"accessibility"
 				],
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"id": 173,
-				"order": 4,
+				"order": 3,
 				"prevSize": 32,
 				"code": 58883,
 				"name": "accessibility",
 				"ligatures": ""
 			},
 			"setIdx": 0,
-			"iconIdx": 173
+			"iconIdx": 3
 		},
 		{
 			"icon": {
@@ -105,18 +85,19 @@
 					"tweet",
 					"social"
 				],
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"id": 365,
-				"order": 5,
+				"order": 4,
 				"prevSize": 32,
 				"code": 58884,
 				"name": "twitter",
 				"ligatures": ""
 			},
 			"setIdx": 0,
-			"iconIdx": 365
+			"iconIdx": 4
 		},
 		{
 			"icon": {
@@ -127,18 +108,19 @@
 					"facebook",
 					"social"
 				],
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"id": 361,
-				"order": 6,
+				"order": 5,
 				"prevSize": 32,
 				"code": 58885,
 				"name": "facebook",
 				"ligatures": ""
 			},
 			"setIdx": 0,
-			"iconIdx": 361
+			"iconIdx": 5
 		},
 		{
 			"icon": {
@@ -149,18 +131,19 @@
 					"youtube",
 					"social"
 				],
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"id": 371,
-				"order": 7,
+				"order": 6,
 				"prevSize": 32,
 				"code": 58887,
 				"name": "youtube",
 				"ligatures": ""
 			},
 			"setIdx": 0,
-			"iconIdx": 371
+			"iconIdx": 6
 		},
 		{
 			"icon": {
@@ -172,18 +155,69 @@
 					"media control",
 					"audio"
 				],
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"id": 266,
-				"order": 8,
+				"order": 7,
 				"prevSize": 32,
 				"code": 58886,
 				"name": "play",
 				"ligatures": ""
 			},
 			"setIdx": 0,
-			"iconIdx": 266
+			"iconIdx": 7
+		},
+		{
+			"icon": {
+				"paths": [
+					"M1024 590.444l-512-397.426-512 397.428v-162.038l512-397.426 512 397.428zM896 576v384h-256v-256h-256v256h-256v-384l384-288z"
+				],
+				"tags": [
+					"home",
+					"house",
+					"building"
+				],
+				"grid": 16,
+				"matchesSearch": false
+			},
+			"properties": {
+				"id": 0,
+				"order": 8,
+				"prevSize": 32,
+				"code": 58880,
+				"name": "home",
+				"ligatures": ""
+			},
+			"setIdx": 1,
+			"iconIdx": 0
+		},
+		{
+			"icon": {
+				"paths": [
+					"M64 192h896v192h-896zM64 448h896v192h-896zM64 704h896v192h-896z"
+				],
+				"tags": [
+					"menu",
+					"list",
+					"items",
+					"lines",
+					"options"
+				],
+				"grid": 16,
+				"matchesSearch": true
+			},
+			"properties": {
+				"id": 184,
+				"order": 9,
+				"prevSize": 32,
+				"code": 58888,
+				"name": "menu",
+				"ligatures": ""
+			},
+			"setIdx": 1,
+			"iconIdx": 184
 		}
 	],
 	"height": 1024,

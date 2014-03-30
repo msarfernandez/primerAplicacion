@@ -23,9 +23,6 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-home:before {
-	content: "\e600";
-}
 .icon-headphones:before {
 	content: "\e601";
 }
@@ -46,4 +43,10 @@
 }
 .icon-play:before {
 	content: "\e606";
+}
+.icon-home:before {
+	content: "\e600";
+}
+.icon-menu:before {
+	content: "\e608";
 }
