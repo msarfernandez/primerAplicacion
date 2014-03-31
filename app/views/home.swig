@@ -3,11 +3,11 @@
 {% block content %}
 
 <header id="sky">
-	<div class="hero-container"></div>
+	<div class="background"></div>
 
 	<div class="navbar navbar-fixed-top" role="navigation">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target=".navbar-collapse">
+			<button type="button" id="show-menu" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-menu"></span>
 				<span>Menú</span>
@@ -46,10 +46,10 @@
 
 	<div class="hero-content">
 		<h1>The Aberdeens</h1>
-		<p class="lead sub-heading">Este sitio corre sobre node.js (express v4.0.0-rc2)</p>
+		<p class="sub-heading">Este sitio corre sobre node.js (express v4.0.0-rc2)</p>
 
-		<p class="lead">
-			<a href="http://www.youtube.com/v/Qby1uFX78kg?fs=1&amp;autoplay=1" id="show-video" class="btn btn-danger btn-default" title="The Aberdeens - I Wanna Be Alone">
+		<p>
+			<a href="http://www.youtube.com/v/Qby1uFX78kg?fs=1&amp;autoplay=1" id="show-video" class="button button-orange" title="The Aberdeens - I Wanna Be Alone">
 				<span class="icon icon-play"></span>
 				<span class="btn-text">Mirá nuestro video</span>
 			</a>

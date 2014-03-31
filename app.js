@@ -14,7 +14,9 @@ server.use(express.static(__dirname + '/app'));
 
 server.get('/', function (req, res) {
     
-    res.render('home', {});
+    res.render('home', {
+    	env : process.env.PORT || "dev"
+    });
 });
 
 server.listen(process.env.PORT || 3000);

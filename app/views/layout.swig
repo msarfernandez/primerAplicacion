@@ -15,7 +15,11 @@
 
 	{% block content %}{% endblock %}
 
-	<script type="text/javascript" src="/js/production.min.js"></script>
+	{% if env == "dev" %}
+		<script type="text/javascript" src="/js/production.js"></script>
+	{% else %}
+		<script type="text/javascript" src="/js/production.min.js"></script>
+	{% endif %}
 	
 </body>
 </html>

@@ -6,13 +6,21 @@ body, html
 	height 100%
 	letter-spacing 2px
 	line-height 1.5em
+	position relative
 	text-align center
 
 button.navbar-toggle
-	background rgba(0, 0, 0, .5)
+	background rgba(0, 0, 0, .8)
 	color #fff
 	margin-left 10px
 	padding 5px 10px
+
+	&.show-menu
+		background #fff
+		color #242424
+
+		.icon-menu
+			color #242424
 
 	span
 		display inline-block
@@ -36,11 +44,12 @@ footer
 		margin 0
 
 header
-	min-height 90%
+	height 100%
+	min-height 400px
 	overflow hidden
 	position relative
 
-	.hero-container
+	.background
 		animation animarBackground 30s ease-in-out infinite alternate
 		background url("../assets/images/cover.jpg")
 		background-position center center
@@ -73,18 +82,19 @@ header
 			text-shadow 2px 1px 3px rgba(0, 0, 0, .5)
 
 ul.nav
-	background rgba(0, 0, 0, .5)
 	border-radius 4px
+	display none
 	padding 0
-	position absolute
 	z-index 100
+
+	&.show-menu
+		display block
 
 	li
 		text-align left
 
 		&:hover a
-			border-radius 4px
-			background rgba(0, 0, 0, .8)
+			background #000
 
 		a
 			color #fff
@@ -93,10 +103,6 @@ ul.nav
 		a > span
 			display inline-block
 			vertical-align middle
-
-.btn > span
-	display inline-block
-	vertical-align middle
 
 #discography, #whoweare
 	background #eee
@@ -111,6 +117,34 @@ ul.nav
 		
 #events, #whoweare
 	border-bottom 1px solid #bbb
+
+.button
+	display inline-block
+	margin-top 25px
+	
+	&:hover
+		text-decoration none
+
+	&.button-orange
+		background #f06d26
+		border 0
+		border-radius 5px
+		box-shadow #e94e16 0px -2px 0px 0 inset, rgba(0,0,0,0.2) 0px 3px 2px 0
+		color #fff
+		padding 10px 2px 12px
+
+		&:hover
+			background #f07a24
+
+	& > span
+		display inline-block
+		vertical-align middle
+
+.navbar
+	padding-bottom 20px
+
+	&.show-menu
+		background rgba(0, 0, 0, .8)
 
 .navbar-collapse
 	box-shadow none
