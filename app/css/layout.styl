@@ -1,0 +1,101 @@
+// footer
+// header (+ nav)
+
+// footer
+footer
+	background _black
+	color _white
+	font-size .8em
+	padding 50px 0
+	text-align center
+
+	p
+		margin 0
+
+// header
+header
+	height 100%
+	min-height 400px
+	overflow hidden
+	position relative
+
+	button.navbar-toggle
+		background rgba(0, 0, 0, .8)
+		color _white
+		margin-left 10px
+		padding 5px 10px
+
+		&.show-menu
+			background _white
+			color _black
+
+			.icon-menu
+				color _black
+
+		span
+			display inline-block
+			vertical-align middle
+
+	.background
+		animation animarBackground 30s ease-in-out infinite alternate
+		background url("../assets/images/cover.jpg")
+		background-position center center
+		background-repeat no-repeat
+		background-size cover
+		left 0
+		min-height 100%
+		min-width 100%
+		position absolute
+		top 0
+
+	.hero-content
+		color _white
+		position absolute
+		top 25%
+		width 100%
+		z-index 0
+
+		a
+			margin-top 25px
+			text-shadow 0px 0px 3px rgba(0, 0, 0, .5)
+
+		h1
+			font-family "Befrisky"
+			font-size 3.5em
+			text-shadow 2px 1px 3px rgba(0, 0, 0, .8)
+
+		p.sub-heading
+			font-style italic
+			text-shadow 2px 1px 3px rgba(0, 0, 0, .5)
+
+ul.nav
+	border-radius 4px
+	display none
+	padding 0
+	z-index 100
+
+	&.show-menu
+		display block
+
+	li
+		text-align left
+
+		&:hover a
+			background #000
+
+		a
+			color _white
+			padding 15px
+
+		a > span
+			display inline-block
+			vertical-align middle
+
+.navbar
+	padding-bottom 20px
+
+	&.show-menu
+		background rgba(0, 0, 0, .8)
+
+.navbar-collapse
+	box-shadow none

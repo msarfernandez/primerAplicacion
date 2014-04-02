@@ -1,0 +1,68 @@
+// variables
+// mixins
+// body
+// estilos predefinidos para íconos y botones
+// animaciones
+
+// variables
+_black = #242424
+_white = #fff
+
+// mixins
+buildButtonColorStyles(baseColor, fontColor)
+	background baseColor
+	box-shadow darken(baseColor, 25%) 0px -2px 0px 0 inset
+	color fontColor
+
+	&:hover
+		background lighten(baseColor, 10%)
+
+// body
+body, html
+	background _white
+	color _black
+	font-family "Open Sans", sans-serif
+	font-size 16px
+	height 100%
+	letter-spacing 2px
+	line-height 1.5em
+	position relative
+	text-align center
+
+// íconos y botones
+[class^="icon-"], [class*=" icon-"]
+	color _white
+	font-size 1.25em
+	margin-right 10px
+
+.button
+	border-radius 5px
+	display inline-block
+	margin-top 25px
+	padding 10px 2px 12px
+	
+	&:hover
+		text-decoration none
+
+	&.button-orange
+		buildButtonColorStyles(#f06d26, _white)
+
+	& > span
+		display inline-block
+		vertical-align middle
+
+// animaciones
+@keyframes animarBackground {
+	from {
+		transform: scale(1) rotate(0deg);
+	}
+	35% {
+		transform: scale(1.1) rotate(-2deg);
+	}
+	70% {
+		transform: scale(1.05) rotate(1deg);
+	}
+	to {
+		transform: scale(1.2) rotate(5deg);
+	}
+}
