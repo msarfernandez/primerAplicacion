@@ -57,6 +57,27 @@
 	</div>
 </header>
 
+<div class="row social-bar">
+	<div class="col-xs-12 col-sm-4 facebook">
+		<a href="#">
+			<span class="icon-facebook"></span>
+			<span class="social-text">Danos un like!</span>
+		</a>
+	</div>
+	<div class="col-xs-12 col-sm-4 twitter">
+		<a href="#">
+			<span class="icon-twitter"></span>
+			<span class="social-text">Síguenos!</span>
+		</a>
+	</div>
+	<div class="col-xs-12 col-sm-4 youtube">
+		<a href="#">
+			<span class="icon-youtube"></span>
+			<span class="social-text">Nuestros videos</span>
+		</a>
+	</div>
+</div>
+
 <div class="container-fluid">
     <div id="whoweare" class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">

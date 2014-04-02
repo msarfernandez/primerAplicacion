@@ -1,16 +1,64 @@
 _darkGray = #bbb
 _lightGray = #eee
+_facebookColor = #3b5998
+_twitterColor = #00aced
+_youtubeColor = #bb0000
 
-#discography, #whoweare
-	background _lightGray
+.container-fluid
 
-#discography, #whoweare, #events
-	font-size .9em
-	padding-bottom 30px
-	text-align left
+	#discography, #whoweare
+		background _lightGray
 
-	h2
-		font-size 1.5em
-		
-#events, #whoweare
-	border-bottom 1px solid _darkGray
+	#discography, #whoweare, #events
+		font-size .9em
+		padding-bottom 30px
+		text-align left
+
+		h2
+			font-size 1.5em
+			
+	#events, #whoweare
+		border-bottom 1px solid _darkGray
+
+	#whoweare
+		padding-top 25px
+
+.social-bar 
+	background _youtubeColor
+	
+	& > div
+		text-align left
+
+		&.facebook
+			background _facebookColor
+
+			&:hover
+				background lighten(_facebookColor, 15%)
+
+		&.twitter
+			background _twitterColor
+
+			&:hover
+				background lighten(_twitterColor, 15%)
+
+		&.youtube
+			background _youtubeColor
+
+			&:hover
+				background lighten(_youtubeColor, 15%)
+
+		a
+			display block
+			padding 10px 0 10px 10px
+
+			&:hover
+				text-decoration none
+
+		span
+			color _white
+			display inline-block
+			font-size 2em
+			vertical-align middle
+
+			&.social-text
+				font-size 1em
