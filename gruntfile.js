@@ -69,7 +69,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'app/css/',
-                    src: 'production.css',
+                    src: 'production.min.css',
                     dest: 'app/css/'
                 }]
             }
@@ -95,6 +95,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', []);
-    grunt.registerTask('build', ['jshint', 'concat', 'stylus', 'encodeImages']);
+    grunt.registerTask('build', ['jshint', 'concat', 'stylus']);
     grunt.registerTask('release', ['jshint', 'bower', 'concat', 'uglify', 'stylus', 'cssmin', 'encodeImages']);
 };
