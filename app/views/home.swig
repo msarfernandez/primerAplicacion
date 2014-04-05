@@ -79,26 +79,52 @@
 		</div>
 	</div>
 
-	<!-- <div id="whoweare" class="row">
-		<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+	<div id="whoweare" class="row">
+		<div class="col-xs-12">
 			<h2>Nosotros</h2>
-			<p>Este es un texto descriptivo.</p>                
+			<figure>
+				<img src="../assets/images/nico.png" alt="Maximiliano Sar Fernández" class="img-responsive hidden-information">
+				<figcaption>
+					<p class="name">Nicolás Lisanti</p>
+					<p>Guitarra y voz.</p>
+					<div class="show-information">Este texto es aleatorio. Muuuy aleatorio. Tanto que tiene más de un renglón #QueMaloSoy</div>
+					<a href="#" class="hidden-information">Más &raquo;</a>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../assets/images/seba.png" alt="Maximiliano Sar Fernández" class="img-responsive hidden-information">
+				<figcaption>
+					<p class="name">Sebastián Avila</p>
+					<p>Bajo y coros.</p>
+					<div class="show-information">Este texto es aleatorio. Muuuy aleatorio. Tanto que tiene más de un renglón #QueMaloSoy</div>
+					<a href="#" class="hidden-information">Más &raquo;</a>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../assets/images/max.png" alt="Maximiliano Sar Fernández" class="img-responsive hidden-information">
+				<figcaption>
+					<p class="name">Max Sar Fernández</p>
+					<p>Batería y coros.</p>
+					<div class="show-information">Este texto es aleatorio. Muuuy aleatorio. Tanto que tiene más de un renglón #QueMaloSoy</div>
+					<a href="#" class="hidden-information">Más &raquo;</a>
+				</figcaption>
+			</figure>
 		</div>
 	</div>
 
 	<div id="events" class="row">
-		<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+		<div class="col-xs-12">
 			<h2>Eventos</h2>
-			<p>Este es un texto descriptivo.</p>
 		</div>
 	</div>
 
 	<div id="discography" class="row">
-		<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+		<div class="col-xs-12">
 			<h2>Discografía</h2>
-			<p>Este es un texto descriptivo.</p>
 		</div>
-	</div> -->
+	</div>
 
 	<footer class="row">
 		<p>The Aberdeens- Buenos Aires, Argentina</p>

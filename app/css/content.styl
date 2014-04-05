@@ -1,27 +1,63 @@
-_darkGray = #bbb
-_lightGray = #eee
 _facebookColor = #3b5998
+_lightGray = #eee
 _twitterColor = #00aced
 _youtubeColor = #bb0000
 
 .container-fluid
 
-	// #discography, #whoweare
-	// 	background _lightGray
+	h2
+		font-size 2em
+		font-style italic
+		font-weight bold
+		margin 25px 0 40px
 
-	// #discography, #whoweare, #events
-	// 	font-size .9em
-	// 	padding-bottom 30px
-	// 	text-align left
+	#discography, #whoweare, #events
+		padding 15px 0
 
-	// 	h2
-	// 		font-size 1.5em
-			
-	// #events, #whoweare
-	// 	border-bottom 1px solid _darkGray
+	#discography
+		padding-bottom 50px
 
-	// #whoweare
-	// 	padding-top 25px
+	#whoweare
+		background _lightGray
+		padding-top 50px
+
+	#whoweare figure
+		background _white
+		box-shadow 0 0 5px rgba(0, 0, 0, .3)
+		display inline-block
+		margin 0 5px 25px
+		padding 5px
+		vertical-align middle
+		width 95%
+
+		figcaption
+			color #95a5a6
+			padding 25px 0
+
+			a
+				color _orange
+				display block
+				font-weight bold
+				padding-top 25px
+
+			.name
+				color _black
+				font-weight bold
+
+			.show-information
+				color _black
+				display none
+				font-size .9em
+				padding 25px 5px 15px
+				letter-spacing 0
+				text-align left
+
+	img
+		height 100%
+		width 100%
+
+		&:hover
+			cursor pointer
 
 .social-bar > div
 	text-align center

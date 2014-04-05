@@ -11165,4 +11165,33 @@ $(document).on("ready", function(){
 			scrollTop: $(id).offset().top
 		}, 1000);
 	});
+
+	// Clic en 'Más' o en la imágen: despliega la info del integrante
+	$("#whoweare a, #whoweare img").on("click", function (event) {
+		
+		// Se detiene el evento para que no cambie la url
+		event.preventDefault();
+
+		// Obtengo el elemento para no hacer queries de más
+		var el = $(this);
+
+		// Obtengo el figcaption
+		var container = el.parent();
+		
+		// Obtengo el selector del link para cambiarle el texto
+		var link = container.find("a");
+
+		// Despliego/Oculto la información
+		container.find(".show-information").slideToggle();
+
+		if(el.hasClass("hidden-information")) {
+
+			el.removeClass("hidden-information");
+			link.html("Menos &laquo;");
+		} else {
+
+			el.addClass("hidden-information");
+			link.html("Más &raquo;");
+		}
+	});
 });
