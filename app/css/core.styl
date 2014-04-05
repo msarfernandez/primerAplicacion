@@ -6,23 +6,47 @@
 
 // variables
 _black = #242424
+_darkBlack = #000
 _white = #fff
 
 // mixins
-buildButtonColorStyles(baseColor, fontColor)
-	background baseColor
-	box-shadow darken(baseColor, 25%) 0px -2px 0px 0 inset
-	color fontColor
+applyTransition(time, function)
+	transition all time function
 
+buildButton(baseColor, fontColor)
+	display inline-block
+	margin-top 25px
+	applyTransition(.2s, ease-in-out)
+	
 	&:hover
-		background lighten(baseColor, 10%)
+		text-decoration none
+
+	&.button-orange
+		background baseColor
+		color fontColor
+
+		&:hover
+			background darken(baseColor, 15%)
+
+	& > span
+		display inline-block
+		padding 10px 0 10px 10px
+		vertical-align middle
+
+		&.btn-text
+			applyTransition(.2s, ease-in-out)
+
+		&.icon
+			background darken(baseColor, 15%)
+			margin 0
+			padding 15px 10px
 
 // body
 body, html
 	background _white
 	color _black
 	font-family "Open Sans", sans-serif
-	font-size 16px
+	font-size 14px
 	height 100%
 	letter-spacing 2px
 	line-height 1.5em
@@ -36,20 +60,7 @@ body, html
 	margin-right 10px
 
 .button
-	border-radius 5px
-	display inline-block
-	margin-top 25px
-	padding 10px 2px 12px
-	
-	&:hover
-		text-decoration none
-
-	&.button-orange
-		buildButtonColorStyles(#f06d26, _white)
-
-	& > span
-		display inline-block
-		vertical-align middle
+	buildButton(#f06d26, _white)
 
 // animaciones
 @keyframes animarBackground {

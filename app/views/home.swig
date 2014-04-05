@@ -50,8 +50,8 @@
 
 		<p>
 			<a href="http://www.youtube.com/v/Qby1uFX78kg?fs=1&amp;autoplay=1" id="show-video" class="button button-orange" title="The Aberdeens - I Wanna Be Alone">
-				<span class="icon icon-play"></span>
 				<span class="btn-text">Mirá nuestro video</span>
+				<span class="icon icon-play"></span>
 			</a>
 		</p>
 	</div>
@@ -59,27 +59,27 @@
 
 <div class="container-fluid">
 	<div class="row social-bar">
-		<div class="col-xs-12 col-sm-4 facebook">
+		<div class="col-xs-4 facebook">
 			<a href="#">
 				<span class="icon-facebook"></span>
 				<span class="social-text">Danos un like!</span>
 			</a>
 		</div>
-		<div class="col-xs-12 col-sm-4 twitter">
+		<div class="col-xs-4 twitter">
 			<a href="#">
 				<span class="icon-twitter"></span>
-				<span class="social-text">Síguenos!</span>
+				<span class="social-text">Seguinos!</span>
 			</a>
 		</div>
-		<div class="col-xs-12 col-sm-4 youtube">
+		<div class="col-xs-4 youtube">
 			<a href="#">
 				<span class="icon-youtube"></span>
-				<span class="social-text">Nuestros videos</span>
+				<span class="social-text">Nuestro canal</span>
 			</a>
 		</div>
 	</div>
 
-	<div id="whoweare" class="row">
+	<!-- <div id="whoweare" class="row">
 		<div class="col-xs-12 col-sm-8 col-sm-offset-2">
 			<h2>Nosotros</h2>
 			<p>Este es un texto descriptivo.</p>                
@@ -98,7 +98,7 @@
 			<h2>Discografía</h2>
 			<p>Este es un texto descriptivo.</p>
 		</div>
-	</div>
+	</div> -->
 
 	<footer class="row">
 		<p>The Aberdeens- Buenos Aires, Argentina</p>

@@ -6,61 +6,74 @@ _youtubeColor = #bb0000
 
 .container-fluid
 
-	#discography, #whoweare
-		background _lightGray
+	// #discography, #whoweare
+	// 	background _lightGray
 
-	#discography, #whoweare, #events
-		font-size .9em
-		padding-bottom 30px
-		text-align left
+	// #discography, #whoweare, #events
+	// 	font-size .9em
+	// 	padding-bottom 30px
+	// 	text-align left
 
-		h2
-			font-size 1.5em
+	// 	h2
+	// 		font-size 1.5em
 			
-	#events, #whoweare
-		border-bottom 1px solid _darkGray
+	// #events, #whoweare
+	// 	border-bottom 1px solid _darkGray
 
-	#whoweare
-		padding-top 25px
+	// #whoweare
+	// 	padding-top 25px
 
-.social-bar 
-	background _youtubeColor
-	
-	& > div
-		text-align center
+.social-bar > div
+	text-align center
 
-		&.facebook
+	&.facebook
+		
+		&:hover
 			background _facebookColor
 
-			&:hover
-				background lighten(_facebookColor, 15%)
-
-		&.twitter
-			background _twitterColor
-
-			&:hover
-				background lighten(_twitterColor, 15%)
-
-		&.youtube
-			background _youtubeColor
-
-			&:hover
-				background lighten(_youtubeColor, 15%)
-
-		a
-			display block
-			padding 10px 0 10px 10px
-
-			&:hover
-				text-decoration none
+		&:hover span
+			color _white
 
 		span
-			color _white
-			display block
-			font-size 2em
-			margin 0
-			vertical-align middle
+			color _facebookColor
 
-			&.social-text
-				font-size 1em
-				min-width 160px
+	&.twitter
+		color _twitterColor
+
+		&:hover
+			background _twitterColor
+
+		&:hover span
+			color _white
+
+		span
+			color _twitterColor
+
+	&.youtube
+		color _youtubeColor
+
+		&:hover
+			background _youtubeColor
+			color _white
+
+		&:hover span
+			color _white
+
+		span
+			color _youtubeColor
+
+	a
+		display block
+		padding 10px
+
+		&:hover
+			text-decoration none
+
+	span
+		display block
+		font-size 2em
+		margin 0
+		applyTransition(.2s, ease-in-out)
+
+		&.social-text
+			display none
