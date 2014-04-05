@@ -9,7 +9,7 @@
 		<div class="navbar-header">
 			<button type="button" id="show-menu" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-menu"></span>
+				<span class="icon icon-paragraph-justify"></span>
 				<span>Menú</span>
 			</button>
 		</div>
@@ -30,13 +30,13 @@
 				</li>
 				<li>
 					<a href="#events" class="fly">
-						<span class="icon icon-calendar"></span>
+						<span class="icon icon-notebook"></span>
 						<span class="text">Eventos</span>
 					</a>
 				</li>
 				<li>
 					<a href="#discography" class="fly">
-						<span class="icon icon-headphones"></span>
+						<span class="icon icon-music"></span>
 						<span class="text">Discografía</span>
 					</a>
 				</li>

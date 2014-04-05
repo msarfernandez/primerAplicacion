@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icons';
-	src:url('../fonts/icons/icons.eot?-hqa2jn');
-	src:url('../fonts/icons/icons.eot?#iefix-hqa2jn') format('embedded-opentype'),
-		url('../fonts/icons/icons.woff?-hqa2jn') format('woff'),
-		url('../fonts/icons/icons.ttf?-hqa2jn') format('truetype'),
-		url('../fonts/icons/icons.svg?-hqa2jn#icons') format('svg');
+	src:url('../fonts/icons/icons.eot?eohvwr');
+	src:url('../fonts/icons/icons.eot?#iefixeohvwr') format('embedded-opentype'),
+		url('../fonts/icons/icons.woff?eohvwr') format('woff'),
+		url('../fonts/icons/icons.ttf?eohvwr') format('truetype'),
+		url('../fonts/icons/icons.svg?eohvwr#icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,12 +23,6 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-headphones:before {
-	content: "\e601";
-}
-.icon-calendar:before {
-	content: "\e602";
-}
 .icon-accessibility:before {
 	content: "\e603";
 }
@@ -47,6 +41,15 @@
 .icon-home:before {
 	content: "\e600";
 }
-.icon-menu:before {
+.icon-music:before {
+	content: "\e601";
+}
+.icon-notebook:before {
+	content: "\e602";
+}
+.icon-arrow-down:before {
 	content: "\e608";
+}
+.icon-paragraph-justify:before {
+	content: "\e609";
 }
