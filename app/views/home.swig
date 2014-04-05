@@ -83,7 +83,7 @@
 		<div class="col-xs-12">
 			<h2>Nosotros</h2>
 			<figure>
-				<img src="../assets/images/nico.png" alt="Maximiliano Sar Fernández" class="img-responsive hidden-information">
+				<img src="/assets/images/nico.png" alt="Maximiliano Sar Fernández" class="img-responsive hidden-information">
 				<figcaption>
 					<p class="name">Nicolás Lisanti</p>
 					<p>Guitarra y voz.</p>
@@ -93,7 +93,7 @@
 			</figure>
 
 			<figure>
-				<img src="../assets/images/seba.png" alt="Maximiliano Sar Fernández" class="img-responsive hidden-information">
+				<img src="/assets/images/seba.png" alt="Maximiliano Sar Fernández" class="img-responsive hidden-information">
 				<figcaption>
 					<p class="name">Sebastián Avila</p>
 					<p>Bajo y coros.</p>
@@ -103,7 +103,7 @@
 			</figure>
 
 			<figure>
-				<img src="../assets/images/max.png" alt="Maximiliano Sar Fernández" class="img-responsive hidden-information">
+				<img src="/assets/images/maxi.png" alt="Maximiliano Sar Fernández" class="img-responsive hidden-information">
 				<figcaption>
 					<p class="name">Max Sar Fernández</p>
 					<p>Batería y coros.</p>
