@@ -11178,19 +11178,26 @@ $(document).on("ready", function(){
 		// Obtengo el figcaption
 		var container = el.parent();
 		
-		// Obtengo el selector del link para cambiarle el texto
+		// Obtengo el selector del link y de la imágen para cambiarle el texto 
+		// y sacarle/ponerle la clase
 		var link = container.find("a");
+		var img = container.find("img");
 
 		// Despliego/Oculto la información
 		container.find(".show-information").slideToggle();
 
+		// Actualizo los elementos
 		if(el.hasClass("hidden-information")) {
 
-			el.removeClass("hidden-information");
+			link.removeClass("hidden-information");
+			img.removeClass("hidden-information");
+
 			link.html("Menos &laquo;");
 		} else {
 
-			el.addClass("hidden-information");
+			link.addClass("hidden-information");
+			img.addClass("hidden-information");
+
 			link.html("Más &raquo;");
 		}
 	});

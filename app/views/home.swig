@@ -80,8 +80,14 @@
 	</div>
 
 	<div id="whoweare" class="row">
+		<div class="col-xs-12 col-sm-10 col-sm-offset-1 whoweare-text">
+			<h2 class="main-title">Los años perdidos...</h2>
+			<p>Es el nombre que damos a <strong><em>nuestro primer disco oficial</em></strong> de estudio, luego mucho trabajo ya lo tenemos en nuestras manos. El disco fue editado de manera independiente y ya se encuentra en las calles.</p>
+			<p><strong><em>The Aberdeens</em></strong> es una banda formada en Buenos Aires, a fines del 2010. Con varios temas en las manos, la banda comienza a trabajar rápidamente proyectando sus primeros conciertos y comenzando a dar forma a su primer disco.</p>
+			<p>Luego de sonar en varios de los escenarios de CABA y Buenos Aires junto a bandas como <em>Juana la Loca</em>, <em>Fantasmagoria</em>, <em>Utopians</em>, <em>Jordan</em>, <em>Superuva</em>, <em>Francisco Bochatón</em>, entre otras; arrancan el 2013 con su disco en mano para comenzar a girar con el mismo en pos de su presentación.</p>
+			<p>Nos presentamos, somos 3:</p>
+		</div>
 		<div class="col-xs-12">
-			<h2>Nosotros</h2>
 			<figure>
 				<img src="/assets/images/nico.png" alt="Maximiliano Sar Fernández" class="img-responsive hidden-information">
 				<figcaption>
