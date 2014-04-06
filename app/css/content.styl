@@ -1,3 +1,4 @@
+_descriptionColor = #95a5a6
 _facebookColor = #3b5998
 _lightGray = #F6F6F6
 _border = #ccc
@@ -12,25 +13,100 @@ _youtubeColor = #bb0000
 		font-weight bold
 		margin 25px 0 40px
 
-		&.main-title
-			font-family "Befrisky"
-			font-size 2.8em
-			font-weight normal
-			font-style normal
-
 	#discography, #whoweare, #events
-		padding 30px 0
+		padding 50px 0
 
 	#discography
 		background _lightGray
 		border-top 2px solid _border
-		padding-bottom 50px
+
+	#events
+		
+		.event-list
+
+			h3
+				font-size 1.2em
+				font-weight bold
+
+			.event
+				border-bottom 10px solid lighten(_orange, 25%)
+				border-top 10px solid lighten(_orange, 25%)
+				margin 50px 0
+				padding 65px 0 0
+				position relative
+
+				.date
+					background darken(_orange, 15%)
+					border 3px solid _white
+					border-radius 100%
+					box-shadow 0 0 10px rgba(0, 0, 0, .3)
+					left 50%
+					margin-left -40px
+					padding 15px 18px 10px
+					position absolute
+					top -25px
+
+					span
+						color _white
+						display block
+						font-weight bold
+
+						&.day
+							font-size 2em
+							margin-bottom 5px
+
+						&.month
+							font-size 1.25em
+
+				img
+					margin-top 25px
+					width 100%
+
+				.event-description
+					padding 15px 0 25px
+					text-align left
+
+					a
+						text-align center
+
+					p
+						color _descriptionColor
+						display none
+						font-size .9em
+						font-style italic
+
+				.hour, .place
+					text-align left
+
+				.image-text
+					color _descriptionColor
+					font-size .75em
+					letter-spacing 0
+					margin-bottom 25px
+					text-align center
+
+				.links
+					overflow hidden
+
+					& > div
+						padding 0
+
+					a
+						color _black
+						display block
+						font-weight bold
+						padding 10px 0
+
+						&.facebook-event
+							background _border
+
+						&.map
+							background _lightGray
 
 	#whoweare
 		background _lightGray
 		border-bottom 2px solid _border
 		border-top 2px solid _border
-		padding-top 50px
 
 		figure
 			background _white
@@ -42,13 +118,10 @@ _youtubeColor = #bb0000
 			width 95%
 
 			figcaption
-				color #95a5a6
+				color _descriptionColor
 				padding 25px 0
 
 				a
-					color _orange
-					display block
-					font-weight bold
 					padding-top 25px
 
 				.name
@@ -71,17 +144,18 @@ _youtubeColor = #bb0000
 				&:hover
 					cursor pointer
 
-		.whoweare-text
+	.plain-text
+		padding-bottom 25px
+
+		p
+			letter-spacing 1px
+			margin 0
 			padding-bottom 25px
 			text-align left
 
-			p
-				letter-spacing 1px
-				padding-bottom 15px
-
-				.befrisky
-					font-family "Befrisky"
-					font-size 1.25em
+			.befrisky
+				font-family "Befrisky"
+				font-size 1.25em
 
 .social-bar > div
 	text-align center

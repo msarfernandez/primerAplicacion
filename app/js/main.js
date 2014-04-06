@@ -91,4 +91,40 @@ $(document).on("ready", function(){
 			link.html("Más &raquo;");
 		}
 	});
+
+	// Clic en Mostrar/Ocultar info en los eventos
+	$(".event a.link").on("click", function (event) {
+		
+		// Se detiene el evento para que no cambie la url
+		event.preventDefault();
+
+		// Obtengo el elemento para no hacer queries de más
+		var el = $(this);
+
+		// Obtengo el contenedor del link y de la descripción
+		var container = el.parent();
+
+		// Se muestra/oculta el párrafo
+		container.children("p").slideToggle();
+
+		// Actualizo el texto del link
+		if(el.hasClass("hidden-information")) {
+
+			el.removeClass("hidden-information");
+			el.html("Ocultar info &laquo;");
+		} else {
+
+			el.addClass("hidden-information");
+			el.html("Mostrar info &raquo;");
+		}
+	});
+
+	// Muestra las imágenes del evento
+	$(".show-fancybox").fancybox({
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
+	});
 });
