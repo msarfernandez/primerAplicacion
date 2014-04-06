@@ -23,18 +23,18 @@
 					<img src="{{event.imageURL}}" alt="Imágen del evento" class="img-responsive">
 				</a>
 				<p class="image-text">[ Haga clic en la foto para ampliar ]</p>
-				<p class="place">Lugar: {{event.place}}</p>
-				<p class="hour">Hora: {{event.hour}}</p>
+				<p class="place">Lugar: <span class="bold">{{event.place}}</span></p>
+				<p class="hour">Hora: <span class="bold">{{event.hour}}</span></p>
 				<div class="event-description">
 					<p>{{event.description}}</p>
 					<a href="#" class="link hidden-information">Mostrar info &raquo;</a>
 				</div>
 				<div class="links">
 					<div class="col-xs-6">
-						<a href="{{event.mapURL}}" class="map" target="_blank">Mapa</a>
+						<a href="{{event.mapURL}}" class="map" target="_blank">Mapa &raquo;</a>
 					</div>
 					<div class="col-xs-6">
-						<a href="{{event.eventURL}}" class="facebook-event" target="_blank">Evento</a>
+						<a href="{{event.eventURL}}" class="facebook-event" target="_blank">Evento &raquo;</a>
 					</div>
 				</div>
 			</div>			
