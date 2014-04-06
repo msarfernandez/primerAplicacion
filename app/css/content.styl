@@ -14,7 +14,7 @@ _youtubeColor = #bb0000
 		margin 25px 0 40px
 
 	#discography, #whoweare, #events
-		padding 50px 0
+		padding-top 50px
 
 	#discography
 		background _lightGray
@@ -27,6 +27,9 @@ _youtubeColor = #bb0000
 			h3
 				font-size 1.2em
 				font-weight bold
+
+			.col-xs-12
+				padding 0
 
 			.event
 				border-bottom 10px solid lighten(_orange, 25%)
@@ -107,15 +110,15 @@ _youtubeColor = #bb0000
 		background _lightGray
 		border-bottom 2px solid _border
 		border-top 2px solid _border
+		padding-bottom 25px
 
 		figure
 			background _white
 			box-shadow 0 0 5px rgba(0, 0, 0, .3)
-			display inline-block
-			margin 0 5px 25px
+			display block
+			margin 0 auto 25px
+			max-width 350px
 			padding 5px
-			vertical-align middle
-			width 95%
 
 			figcaption
 				color _descriptionColor
@@ -144,8 +147,10 @@ _youtubeColor = #bb0000
 				&:hover
 					cursor pointer
 
+		.col-sm-4
+			padding 0
+
 	.plain-text
-		padding-bottom 25px
 
 		p
 			letter-spacing 1px
