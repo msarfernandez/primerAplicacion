@@ -2,10 +2,14 @@
 
 {% block content %}
 
-<header id="sky">
+<div id="preloader">
+	<p style="font-size: 18px; font-weight: bold; margin-top: 100px;">Iniciando algo impresionante...</p>
+</div>
+
+<header style="display: none;" class="wow fadeInDown" data-wow-duration="0.5s" id="sky">
 	<div class="background"></div>
 
-	<div class="navbar navbar-fixed-top" role="navigation">
+	<div class="navbar navbar-fixed-top wow fadeInDownBig" role="navigation" data-wow-delay="0.25s" data-wow-duration="0.5s">
 		<div class="navbar-header">
 			<button type="button" id="show-menu" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
@@ -14,7 +18,7 @@
 			</button>
 		</div>
 
-		<div class="navbar-collapse collapse">
+		<div class="navbar-collapse collapse wow fadeInDownBig" data-wow-delay="0.25s" data-wow-duration="0.5s">
 			<ul class="nav navbar-bar">
 				<li>
 					<a href="#sky" class="fly">
@@ -44,7 +48,7 @@
 		</div>
 	</div>
 
-	<div class="hero-content">
+	<div class="hero-content wow fadeInUpBig" data-wow-delay="0.5s" data-wow-duration="1s">
 		<h1>The Aberdeens</h1>
 		<p class="sub-heading">Este sitio corre sobre node.js (express v4.0.0-rc2)</p>
 
@@ -57,8 +61,8 @@
 	</div>
 </header>
 
-<div class="container-fluid">
-	<div class="row social-bar">
+<div class="container-fluid" style="display: none;" id="content">
+	<div class="row social-bar wow fadeInUp" data-wow-duration="1s" style="display: none;">
 		<div class="col-xs-4 facebook">
 			<a href="#">
 				<span class="icon-facebook"></span>
@@ -74,12 +78,12 @@
 		<div class="col-xs-4 youtube">
 			<a href="#">
 				<span class="icon-youtube"></span>
-				<span class="social-text">Nuestro canal</span>
+				<span class="social-text">Nuestros videos</span>
 			</a>
 		</div>
 	</div>
 
-	<div id="whoweare" class="row">
+	<div id="whoweare" class="row wow fadeInUp" data-wow-duration="1s" style="display: none;">
 		<div class="col-xs-12 col-sm-10 col-sm-offset-1 plain-text">
 			<h2>Los años perdidos...</h2>
 			<p>Es el nombre que damos a <strong><em>nuestro primer disco oficial</em></strong> de estudio, luego mucho trabajo ya lo tenemos en nuestras manos. El disco fue editado de manera independiente y ya se encuentra en las calles.</p>
@@ -126,13 +130,13 @@
 		</div>
 	</div>
 
-	<div id="events" class="row">
+	<div id="events" class="row wow fadeInUp" data-wow-duration="1s" style="display: none;">
 
 		{% include "events.swig" with events %}
 
 	</div>
 
-	<div id="discography" class="row">
+	<div id="discography" class="row wow fadeInUp" data-wow-duration="1s" style="display: none;">
 		<div class="col-xs-12 col-sm-10 col-sm-offset-1 plain-text">
 			<h2>Discografía</h2>
 		</div>

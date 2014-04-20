@@ -31,6 +31,7 @@ module.exports = function(grunt) {
                     'app/bower_components/jquery/jquery.js',
                     'app/bower_components/bootstrap/bootstrap.js',
                     'app/bower_components/fancybox/source/jquery.fancybox.pack.js',
+                    'app/bower_components/WOW/wow.js',
                     'app/js/main.js'
                 ],
                 dest: 'app/js/production.js',

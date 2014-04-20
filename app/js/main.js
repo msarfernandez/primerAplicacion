@@ -1,6 +1,18 @@
-$(document).on("ready", function(){
+$(window).on("load", function(){
 
 	console.log("Funciona!");
+
+	// Animación de entrada
+	setTimeout(function () {
+		$("#preloader").fadeOut(500);
+
+		setTimeout(function () {
+			new WOW().init();
+
+			$("#content").fadeIn("fast");
+		}, 500);
+	}, 500);
+
 
 	// Muestra el video
 	$("#show-video").fancybox({
