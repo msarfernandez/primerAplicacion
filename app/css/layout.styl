@@ -2,15 +2,15 @@
 // header (+ nav)
 
 // footer
-footer
-	background _black
-	color _white
-	font-size .8em
-	padding 50px 0
-	text-align center
+// footer
+// 	background _black
+// 	color _white
+// 	font-size .8em
+// 	padding 50px 0
+// 	text-align center
 
-	p
-		margin 0
+// 	p
+// 		margin 0
 
 // header
 header
@@ -19,23 +19,33 @@ header
 	overflow hidden
 	position relative
 
-	button.navbar-toggle
-		background rgba(0, 0, 0, .5)
-		border-radius 0
-		color _white
-		margin-right 8px
-		padding 5px 10px
+	nav
+		right -50px
+		position fixed
+		top 0
 
-		&.show-menu
-			background _white
-			color _black
+		a#show-menu
+			background _black
+			color _white
+			padding 10px 15px
 
-			.icon
-				color _black
+	// button.navbar-toggle
+	// 	background rgba(0, 0, 0, .5)
+	// 	border-radius 0
+	// 	color _white
+	// 	margin-right 8px
+	// 	padding 5px 10px
 
-		span
-			display inline-block
-			vertical-align middle
+	// 	&.show-menu
+	// 		background _white
+	// 		color _black
+
+	// 		.icon
+	// 			color _black
+
+	// 	span
+	// 		display inline-block
+	// 		vertical-align middle
 
 	.background
 		animation animarBackground 30s ease-in-out infinite alternate
@@ -49,53 +59,53 @@ header
 		position absolute
 		top 0
 
-	.hero-content
-		color _white
-		position absolute
-		top 25%
-		width 100%
-		z-index 0
+	// .hero-content
+	// 	color _white
+	// 	position absolute
+	// 	top 25%
+	// 	width 100%
+	// 	z-index 0
 
-		a
-			margin-top 25px
-			text-shadow 0px 0px 3px rgba(0, 0, 0, .5)
+	// 	a
+	// 		margin-top 25px
+	// 		text-shadow 0px 0px 3px rgba(0, 0, 0, .5)
 
-		h1
-			font-family "Befrisky"
-			font-size 3.5em
-			text-shadow 2px 1px 3px rgba(0, 0, 0, .8)
+	// 	h1
+	// 		font-family "Befrisky"
+	// 		font-size 3.5em
+	// 		text-shadow 2px 1px 3px rgba(0, 0, 0, .8)
 
-		p.sub-heading
-			font-style italic
-			text-shadow 2px 1px 3px rgba(0, 0, 0, .5)
+	// 	p.sub-heading
+	// 		font-style italic
+	// 		text-shadow 2px 1px 3px rgba(0, 0, 0, .5)
 
-ul.nav
-	display none
-	padding 0
-	z-index 100
+// ul.nav
+// 	display none
+// 	padding 0
+// 	z-index 100
 
-	&.show-menu
-		display block
+// 	&.show-menu
+// 		display block
 
-	li
-		text-align left
+// 	li
+// 		text-align left
 
-		&:hover a
-			background _black
+// 		&:hover a
+// 			background _black
 
-		a
-			color _white
-			padding 15px
+// 		a
+// 			color _white
+// 			padding 15px
 
-		a > span
-			display inline-block
-			vertical-align middle
+// 		a > span
+// 			display inline-block
+// 			vertical-align middle
 
-.navbar
-	padding-bottom 20px
+// .navbar
+// 	padding-bottom 20px
 
-	&.show-menu
-		background _darkBlack
+// 	&.show-menu
+// 		background _darkBlack
 
-.navbar-collapse
-	box-shadow none
+// .navbar-collapse
+// 	box-shadow none

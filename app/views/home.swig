@@ -9,7 +9,13 @@
 <header style="display: none;" class="wow fadeInDown" data-wow-duration="0.5s" id="sky">
 	<div class="background"></div>
 
-	<div class="navbar navbar-fixed-top wow fadeInDownBig" role="navigation" data-wow-delay="0.25s" data-wow-duration="0.5s">
+	<nav>
+		<a id="show-menu" href="#">
+			<span class="icon icon-home"></span>
+		</a>
+	</nav>
+
+	<!-- <div class="navbar navbar-fixed-top wow fadeInDownBig" role="navigation" data-wow-delay="0.25s" data-wow-duration="0.5s">
 		<div class="navbar-header">
 			<button type="button" id="show-menu" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
@@ -46,9 +52,9 @@
 				</li>
 			</ul>
 		</div>
-	</div>
+	</div> -->
 
-	<div class="hero-content wow fadeInUpBig" data-wow-delay="0.5s" data-wow-duration="1s">
+	<!-- <div class="hero-content wow fadeInUpBig" data-wow-delay="0.5s" data-wow-duration="1s">
 		<h1>The Aberdeens</h1>
 		<p class="sub-heading">Este sitio corre sobre node.js (express v4.0.0-rc2)</p>
 
@@ -58,10 +64,10 @@
 				<span class="icon icon-play"></span>
 			</a>
 		</p>
-	</div>
+	</div> -->
 </header>
 
-<div class="container-fluid" style="display: none;" id="content">
+<!-- <div class="container-fluid" style="display: none;" id="content">
 	<div class="row social-bar wow fadeInUp" data-wow-duration="1s" style="display: none;">
 		<div class="col-xs-4 facebook">
 			<a href="#">
@@ -145,6 +151,6 @@
 	<footer class="row">
 		<p>The Aberdeens- Buenos Aires, Argentina</p>
 	</footer>
-</div>
+</div> -->
 
 {% endblock %}

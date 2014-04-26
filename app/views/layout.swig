@@ -4,7 +4,7 @@
 	<title>The Aberdeens</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="Rediseño del sitio de The Aberdeens. Corre sobre nodejs (express 4.x)">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic" rel="stylesheet" type="text/css">
 	{% if env == "dev" %}
 		<link rel="stylesheet" type="text/css" href="/css/production.css">
 	{% else %}

@@ -11308,130 +11308,129 @@ $(window).on("load", function(){
 		}, 500);
 	}, 500);
 
+// // Muestra el video
+// $("#show-video").fancybox({
+// 'padding'		: 0,
+// 'autoScale'		: false,
+// 'transitionIn'	: 'none',
+// 'transitionOut'	: 'none',
+// 'title'			: $(this).title,
+// 'width'			: 853,
+// 'height'		: 480,
+// 'type'			: 'swf',
+// 'swf'			: {
+// 'wmode'				: 'transparent',
+// 'allowfullscreen'	: 'true'
+// }
+// });
 
-	// Muestra el video
-	$("#show-video").fancybox({
-		'padding'		: 0,
-		'autoScale'		: false,
-		'transitionIn'	: 'none',
-		'transitionOut'	: 'none',
-		'title'			: $(this).title,
-		'width'			: 853,
-		'height'		: 480,
-		'type'			: 'swf',
-		'swf'			: {
-			'wmode'				: 'transparent',
-			'allowfullscreen'	: 'true'
-		}
-	});
+// // Se obtiene el nav
+// var nav = $("div.navbar");
 
-	// Se obtiene el nav
-	var nav = $("div.navbar");
+// // Items de navegación
+// var ul_nav = nav.find("ul.nav");
 
-	// Items de navegación
-	var ul_nav = nav.find("ul.nav");
+// // Clic sobre el botón que despliega el menú
+// $("#show-menu").on("click", function () {
 
-	// Clic sobre el botón que despliega el menú
-	$("#show-menu").on("click", function () {
+// // Se cambia el background del nav
+// nav.toggleClass("show-menu");
 
-		// Se cambia el background del nav
-		nav.toggleClass("show-menu");
+// // Se oculta la lista de items de navegación
+// ul_nav.toggleClass("show-menu");
 
-		// Se oculta la lista de items de navegación
-		ul_nav.toggleClass("show-menu");
+// // Se cambia el estilo de botón
+// $(this).toggleClass("show-menu");
+// });
 
-		// Se cambia el estilo de botón
-		$(this).toggleClass("show-menu");
-	});
+// // Clic en algunos items del menú que despliegan contenido
+// $(".fly").on("click", function (event) {
 
-	// Clic en algunos items del menú que despliegan contenido
-	$(".fly").on("click", function (event) {
-		
-		// Se detiene el evento para que no cambie la url
-		event.preventDefault();
+// // Se detiene el evento para que no cambie la url
+// event.preventDefault();
 
-		// Se ejecuta el clic del menú si el botón no está oculto
-		if ($("#show-menu").css("display") === "block") {
-			$("#show-menu").click();
-		}
+// // Se ejecuta el clic del menú si el botón no está oculto
+// if ($("#show-menu").css("display") === "block") {
+// $("#show-menu").click();
+// }
 
-		var id = $(this).attr("href");
+// var id = $(this).attr("href");
 
-		// Se muestra el contenido
-		$("body").animate({ 
-			scrollTop: $(id).offset().top
-		}, 1000);
-	});
+// // Se muestra el contenido
+// $("body").animate({ 
+// scrollTop: $(id).offset().top
+// }, 1000);
+// });
 
-	// Clic en 'Más' o en la imágen: despliega la info del integrante
-	$("#whoweare a, #whoweare img").on("click", function (event) {
-		
-		// Se detiene el evento para que no cambie la url
-		event.preventDefault();
+// // Clic en 'Más' o en la imágen: despliega la info del integrante
+// $("#whoweare a, #whoweare img").on("click", function (event) {
 
-		// Obtengo el elemento para no hacer queries de más
-		var el = $(this);
+// // Se detiene el evento para que no cambie la url
+// event.preventDefault();
 
-		// Obtengo el figcaption
-		var container = el.parent();
-		
-		// Obtengo el selector del link y de la imágen para cambiarle el texto 
-		// y sacarle/ponerle la clase
-		var link = container.find("a");
-		var img = container.find("img");
+// // Obtengo el elemento para no hacer queries de más
+// var el = $(this);
 
-		// Despliego/Oculto la información
-		container.find(".show-information").slideToggle();
+// // Obtengo el figcaption
+// var container = el.parent();
 
-		// Actualizo los elementos
-		if(el.hasClass("hidden-information")) {
+// // Obtengo el selector del link y de la imágen para cambiarle el texto 
+// // y sacarle/ponerle la clase
+// var link = container.find("a");
+// var img = container.find("img");
 
-			link.removeClass("hidden-information");
-			img.removeClass("hidden-information");
+// // Despliego/Oculto la información
+// container.find(".show-information").slideToggle();
 
-			link.html("Menos &laquo;");
-		} else {
+// // Actualizo los elementos
+// if(el.hasClass("hidden-information")) {
 
-			link.addClass("hidden-information");
-			img.addClass("hidden-information");
+// link.removeClass("hidden-information");
+// img.removeClass("hidden-information");
 
-			link.html("Más &raquo;");
-		}
-	});
+// link.html("Menos &laquo;");
+// } else {
 
-	// Clic en Mostrar/Ocultar info en los eventos
-	$(".event a.link").on("click", function (event) {
-		
-		// Se detiene el evento para que no cambie la url
-		event.preventDefault();
+// link.addClass("hidden-information");
+// img.addClass("hidden-information");
 
-		// Obtengo el elemento para no hacer queries de más
-		var el = $(this);
+// link.html("Más &raquo;");
+// }
+// });
 
-		// Obtengo el contenedor del link y de la descripción
-		var container = el.parent();
+// // Clic en Mostrar/Ocultar info en los eventos
+// $(".event a.link").on("click", function (event) {
 
-		// Se muestra/oculta el párrafo
-		container.children("p").slideToggle();
+// // Se detiene el evento para que no cambie la url
+// event.preventDefault();
 
-		// Actualizo el texto del link
-		if(el.hasClass("hidden-information")) {
+// // Obtengo el elemento para no hacer queries de más
+// var el = $(this);
 
-			el.removeClass("hidden-information");
-			el.html("Ocultar info &laquo;");
-		} else {
+// // Obtengo el contenedor del link y de la descripción
+// var container = el.parent();
 
-			el.addClass("hidden-information");
-			el.html("Mostrar info &raquo;");
-		}
-	});
+// // Se muestra/oculta el párrafo
+// container.children("p").slideToggle();
 
-	// Muestra las imágenes del evento
-	$(".show-fancybox").fancybox({
-		helpers: {
-			overlay: {
-				locked: false
-			}
-		}
-	});
+// // Actualizo el texto del link
+// if(el.hasClass("hidden-information")) {
+
+// el.removeClass("hidden-information");
+// el.html("Ocultar info &laquo;");
+// } else {
+
+// el.addClass("hidden-information");
+// el.html("Mostrar info &raquo;");
+// }
+// });
+
+// // Muestra las imágenes del evento
+// $(".show-fancybox").fancybox({
+// helpers: {
+// overlay: {
+// locked: false
+// }
+// }
+// });
 });
