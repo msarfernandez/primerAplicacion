@@ -1,7 +1,7 @@
 {
   "name": "the-aberdeens",
   "description": "Rediseño del sitio de The Aberdeens. Corre sobre nodejs (express 4.x)",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "express": "^4.0.0-rc2",
     "swig": "~1.3.0",
