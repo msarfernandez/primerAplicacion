@@ -2,12 +2,12 @@
 
 {% block content %}
 
-<div class="pure-g-r">
-	<div id="preloader" class="pure-u-1">
-		<p style="font-size: 20px; font-weight: bold; margin-top: 100px;">Iniciando algo impresionante...</p>
-	</div>
+<div id="preloader">
+	<p style="font-size: 15px; font-weight: bold; letter-spacing: 2px; margin-top: 100px;">Iniciando algo impresionante...</p>
+</div>
 
-	<nav style="display: none;" class="wow fadeInDown" data-wow-duration="1.5s">
+<div id="wrapper" class="pure-g-r" style="display: none;">
+	<nav>
 		<a id="show-menu" href="#">
 			<i class="fa fa-angle-double-left"></i>
 		</a>
@@ -62,8 +62,6 @@
 			</div>
 		</div>
 	</nav>
-
-
 </div>
 
 {% endblock %}
