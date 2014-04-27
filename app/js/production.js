@@ -9352,7 +9352,7 @@ $(window).on("load", function(){
 		
 		setTimeout(function () {
 
-			$("#wrapper").fadeIn("slow");
+			$("#wrapper, #content").fadeIn("slow");
 
 			new WOW().init();
 		}, 500);

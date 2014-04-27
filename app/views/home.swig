@@ -73,9 +73,16 @@
 				<a href="http://www.youtube.com/v/Qby1uFX78kg?fs=1&amp;autoplay=1" id="show-video" class="button pure-button" title="The Aberdeens - I Wanna Be Alone">
 					<span class="fa fa-play"></span>
 					<span>Mirá nuestro video</span>
-				</a>				
+				</a>
 			</div>
 		</div>
+	</div>
+
+</div>
+
+<div id="content" class="pure-g" style="display:none;">
+	<div class="pure-u-1">
+		<h2>Nosotros</h2>
 	</div>
 </div>
 
