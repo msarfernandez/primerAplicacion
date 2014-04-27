@@ -1,1 +1,79 @@
-// #content
+#content
+	text-align left
+
+	& > div
+		padding 25px 10px
+
+	h2
+		font-size 1.25em
+		text-transform uppercase
+
+	#who-we-are
+		border-top 10px solid _orange
+		background _gray
+
+		a.picture
+			display block
+
+			img
+				applyTransition(.5s, ease)
+				border-radius 4px
+				box-shadow 0 0 5px rgba(0, 0, 0, .3)
+				height 100%
+				width 100%
+
+				&:hover
+					box-shadow 0 0 15px rgba(0, 0, 0, .5)
+
+		p
+			letter-spacing 1px
+
+	.people
+		background _black
+		color _gray
+
+		figure
+			background _white
+			display block
+			margin 0 auto 25px
+			padding 5px
+
+			figcaption
+				color _descriptionColor
+				padding 5px 0
+				text-align center
+
+				a
+					border-top 1px solid _gray
+					color _orange
+					display block
+					font-weight bold
+					margin-top 15px
+					padding-top 10px
+					text-decoration none
+
+				p 
+					margin 0 0 10px
+
+				.name
+					color _black
+					font-weight bold
+
+				.show-information
+					color _black
+					display none
+					font-size .9em
+					font-style italic
+					padding 15px 10px
+					letter-spacing 1px
+					text-align left
+
+			img
+				height 100%
+				width 100%
+
+				&:hover
+					cursor pointer
+
+		.pure-g-r
+			padding 25px 0 0

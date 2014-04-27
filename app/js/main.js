@@ -15,15 +15,11 @@ $(window).on("load", function(){
 		}, 500);
 	}, 500);
 
-	// Evita los cambios de url en los clicks de los <a>
-	$("a").on("click", function (event) {
-
-		event.preventDefault();
-	});
-
 	// Muestra el menú
-	$("#show-menu").on("click", function () {
+	$("#show-menu").on("click", function (event) {
 		
+		event.preventDefault();
+
 		// Anima el botón		
 		$(this).find("span").toggleClass("clicked");
 
@@ -44,4 +40,62 @@ $(window).on("load", function(){
 			'allowfullscreen'	: 'true'
 		}
 	});
+
+	// Clic en 'Más': despliega la info del integrante
+	$(".people a").on("click", function (event) {
+
+		// Se detiene el evento para que no cambie la url
+		event.preventDefault();
+
+		// Elemento
+		var el = $(this);
+
+		// Obtengo el figcaption
+		var container = el.parent().parent();
+
+		// Muestro la información
+		ShowInformation(el, container);
+	});
+
+	// Clic en ima imágen de los integrantes: despliega la info del integrante
+	$(".people img").on("click", function (event) {
+
+		// Se detiene el evento para que no cambie la url
+		event.preventDefault();
+
+		// Elemento
+		var el = $(this);
+
+		// Obtengo el figcaption
+		var container = el.parent();
+
+		// Muestro la información
+		ShowInformation(el, container);
+	});
+
+	function ShowInformation (el, container) {
+
+		// Obtengo el selector del link y de la imágen para cambiarle el texto 
+		// y sacarle/ponerle la clase
+		var link = container.find("a");
+		var img = container.find("img");
+
+		// Despliego/Oculto la información
+		container.find(".show-information").slideToggle();
+
+		// Actualizo los elementos
+		if(el.hasClass("hidden-information")) {
+
+			link.removeClass("hidden-information");
+			img.removeClass("hidden-information");
+
+			link.html("Menos &laquo;");
+		} else {
+
+			link.addClass("hidden-information");
+			img.addClass("hidden-information");
+
+			link.html("Más &raquo;");
+		}
+	}
 });
