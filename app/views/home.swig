@@ -3,7 +3,11 @@
 {% block content %}
 
 <div class="pure-g-r">
-	<nav>
+	<div id="preloader" class="pure-u-1">
+		<p style="font-size: 20px; font-weight: bold; margin-top: 100px;">Iniciando algo impresionante...</p>
+	</div>
+
+	<nav style="display: none;" class="wow fadeInDown" data-wow-duration="1.5s">
 		<a id="show-menu" href="#">
 			<i class="fa fa-angle-double-left"></i>
 		</a>

@@ -2,6 +2,18 @@ $(window).on("load", function(){
 
 	console.log("Funciona!");
 
+	// Animación de entrada
+	setTimeout(function () {
+		
+		$("#preloader").fadeOut(400);
+
+		setTimeout(function () {
+
+			new WOW().init();
+		}, 500);
+	}, 500);
+
+	// Evita los cambios de url en los clicks de los <a>
 	$("a").on("click", function (event) {
 
 		event.preventDefault();
