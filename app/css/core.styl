@@ -1,11 +1,8 @@
 // variables
 // mixins
-// estilos globales
-// animaciones
 
 // variables
 _black = #3A3A3A
-_descriptionColor = #95a5a6
 _gray = #E9E8E3
 _orange = #dd580f
 _white = #fff
@@ -13,39 +10,3 @@ _white = #fff
 // mixins
 applyTransition(time, function)
 	transition all time function
-
-// estilos globales
-.button
-	applyTransition(.5s, ease)
-	padding .8em 1.25em
-
-	span
-		display inline-block
-		text-shadow 0 0 3px rgba(0, 0, 0, .5)
-		vertical-align middle
-
-	.fa
-		font-size 1.25em
-		margin-right 10px
-
-.fancybox-lock .fancybox-overlay
-	overflow-y hidden
-
-.pure-u-8-24
-	width 33%
-
-// animaciones
-@keyframes animarBackground {
-	from {
-		transform: scale(1) rotate(0deg);
-	}
-	35% {
-		transform: scale(1.1) rotate(-2deg);
-	}
-	70% {
-		transform: scale(1.05) rotate(1deg);
-	}
-	to {
-		transform: scale(1.2) rotate(5deg);
-	}
-}
