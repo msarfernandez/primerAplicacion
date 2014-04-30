@@ -1,0 +1,11 @@
+{
+  "name": "the-aberdeens",
+  "version": "0.0.2",
+  "dependencies": {
+    "jquery": "2.1.0",
+    "fancybox": "2.1.5",
+    "WOW": "*",
+    "animate.css": "*",
+    "pure": "~0.4.2"
+  }
+}
