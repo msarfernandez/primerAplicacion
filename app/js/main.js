@@ -2,6 +2,19 @@ $(window).on("load", function(){
 
 	console.log("Funciona!");
 
+		// Animación de entrada
+	setTimeout(function () {
+		
+		$("#preloader").fadeOut(400);
+		
+		setTimeout(function () {
+
+			$("#wrapper").fadeIn("slow");
+
+			new WOW().init();
+		}, 500);
+	}, 500);
+
 	// Muestra el video
 	$("#show-video").fancybox({
 		'padding'		: 0,
