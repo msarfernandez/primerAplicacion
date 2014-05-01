@@ -70,7 +70,7 @@
 				<p class="wow fadeIn">Estos somos nosotros, agregué este texto para que no quede tan aislado todo.</p>				
 			</div>
 			<div class="pure-u-1">
-				<div class="pure-g-r musician wow fadeInUp">
+				<div class="pure-g-r musician wow fadeIn">
 					<div class="pure-u-1-3">
 						<a href="/assets/images/nico-2.jpg" title="Nicolas Lisanti" class="show-img">
 							<img src="/assets/images/nico.png" alt="Nicolás Lisanti">
@@ -97,7 +97,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="pure-g-r musician wow fadeInUp">
+				<div class="pure-g-r musician wow fadeIn">
 					<div class="pure-u-1-3">
 						<a href="/assets/images/seba-2.jpg" title="Sebastián Avila" class="show-img">
 							<img src="/assets/images/seba.png" alt="Sebastián Avila">
@@ -124,7 +124,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="pure-g-r musician wow fadeInUp">
+				<div class="pure-g-r musician wow fadeIn">
 					<div class="pure-u-1-3">
 						<a href="/assets/images/max-2.jpg" title="Max Sar Fernández" class="show-img">
 							<img src="/assets/images/max.png" alt="Max Sar Fernández">
