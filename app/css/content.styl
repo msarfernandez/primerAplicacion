@@ -83,6 +83,12 @@
 	.container
 		margin 0 10px
 
+	.epigraph p
+		color _darkgray
+		font-size .7em
+		margin 0
+		text-align center
+
 	.musicians
 		background #F3F3F5
 		border-top 3px solid _darkgray
@@ -136,3 +142,13 @@
 
 	.pictures
 		margin-bottom 25px
+
+	.show-img
+		display block
+		overflow hidden
+
+		&:hover img
+			transform scale(1.05)
+
+		img
+			applyTransition(0.5s, ease)
