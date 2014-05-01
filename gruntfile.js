@@ -105,5 +105,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-image-embed");
 
     grunt.registerTask('build', ['stylus', 'imageEmbed', 'concat', 'jshint']);
-    grunt.registerTask('release', ['stylus', 'cssmin', 'imageEmbed', 'concat', 'jshint', 'uglify']);
+    grunt.registerTask('release', ['stylus', 'imageEmbed', 'concat', 'cssmin', 'jshint', 'uglify']);
 };
