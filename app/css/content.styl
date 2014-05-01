@@ -18,6 +18,7 @@
 			vertical-align middle
 
 			a
+				applyTransition(.5s, ease-in-out)
 				background _orange
 				border 3px solid darken(_orange, 25%)
 				color _white
@@ -28,6 +29,9 @@
 				text-decoration none
 				text-shadow 1px 1px 1px rgba(0, 0, 0, .3)
 				text-transform uppercase
+
+				&:hover
+					background darken(_orange, 25%)
 
 				i
 					margin 0 10px
@@ -47,14 +51,14 @@
 				text-shadow 2px 1px 3px rgba(0, 0, 0, .5)
 
 .section
-	border-bottom 5px solid _orange
-	border-top 5px solid _orange
+	border-top 10px solid _orange
 	padding-top 50px
 	text-align left
 	
 	a, p
 		font-size .8em
 		font-style italic
+		text-decoration none
 
 	h2
 		font-family 'Fjalla One', sans-serif
@@ -77,6 +81,7 @@
 		font-family 'Fjalla One', sans-serif
 		font-size 1.25em
 		font-weight normal
+		line-height 1em
 		margin 50px 0
 		text-transform uppercase
 
@@ -89,18 +94,56 @@
 		margin 0
 		text-align center
 
+	.event-list
+		margin-bottom 25px
+
+		.event
+			margin 50px 0 25px
+			padding 0 0 10px
+			border-bottom 1px solid _darkgray
+
+			a
+
+				&:hover h3
+					color _orange
+
+				&.link
+					text-align right
+
+			h3
+				applyTransition(.3s, ease-in-out)
+				color _black
+				font-size 1.2em
+				font-style normal
+				line-height 1.25em
+				margin 0 0 15px
+
+			.date
+				color _darkgray
+				font-size .8em
+				font-weight bold
+
+				.day
+					margin-right 5px
+
+	.link
+		color _orange
+		display block
+		font-weight bold
+		text-align center
+
+		i
+			margin-left 5px
+
 	.musicians
-		background #F3F3F5
+		background _gray
 		border-top 3px solid _darkgray
 		margin 50px 0 0
 
 		.musician
 			background _white
-			box-shadow 0 0 10px rgba(0, 0, 0, .2)
+			box-shadow 2px 2px 0 _darkgray
 			margin 25px 0 50px
-
-			a.link i
-				margin-left 5px
 
 			img
 				margin-top 0
@@ -116,12 +159,7 @@
 				margin-top 25px
 
 				a
-					color _orange
-					display block
-					font-weight bold
 					padding 10px 0
-					text-align center
-					text-decoration none
 
 				p
 					display none
@@ -130,12 +168,12 @@
 
 			.skills
 				text-align center
-				
-				a
-					color _orange
 
-					i
-						font-size 30px
+				i
+					font-size 30px
+
+					&.fa-twitter
+						color #00ACED
 
 				p
 					margin 0
@@ -155,4 +193,4 @@
 			transform scale(1.05) rotate(-1deg)
 
 		img
-			applyTransition(0.5s, ease)
+			applyTransition(.5s, ease-in-out)

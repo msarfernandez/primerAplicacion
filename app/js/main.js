@@ -44,12 +44,12 @@ $(document).on("ready", function(){
 		if($(this).hasClass("clicked")) {
 
 			$(this).removeClass("clicked");
-			$(this).html("<span>Más</span><i class='fa fa-angle-double-right'></i>");
+			$(this).html("<span>Más</span><i class='fa fa-angle-double-down'></i>");
 		}
 		else {
 
 			$(this).addClass("clicked");
-			$(this).html("<span>Ocultar</span><i class='fa fa-angle-double-left'></i>");
+			$(this).html("<span>Ocultar</span><i class='fa fa-angle-double-up'></i>");
 		}
 
 		$(this).siblings().slideToggle();
