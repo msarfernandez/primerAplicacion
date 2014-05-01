@@ -2,6 +2,30 @@
 
 {% block content %}
 
+	{% block splash %} {% endblock %}
+	{% block who-we-are %} {% endblock %}
+
+{% endblock %}
+
+{% block splash %}
+
+<div id="splash" class="pure-g">
+	<div class="pure-u-1">
+		<div class="splash-content">
+			<h1>The Aberdeens</h1>
+			<p>Este sitio corre sobre node.js (express v4.0.0-rc2)</p>
+			<a href="#" id="show-video">
+				<span>Mirá nuestro video</span>
+				<i class="fa fa-play"></i>
+			</a>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
+
+{% block who-we-are %}
+
 <div class="pure-g section">
 	<div class="pure-u-1">
 		<h2>Nosotros</h2>
@@ -18,8 +42,8 @@
 		</div>
 	</div>
 	<div class="pure-u-1">
-		<p>The Aberdeens es una banda formada en Buenos Aires, a fines del 2010. Con varios temas en las manos, la banda comienza a trabajar rápidamente proyectando sus primeros conciertos y comenzando a dar forma a su primer disco.</p>
-		<p>Luego de sonar en varios de los escenarios de CABA y Buenos Aires junto a bandas como Juana la Loca, Fantasmagoria, Utopians, Jordan, Superuva, Francisco Bochatón, entre otras; arrancan el 2013 con su disco en mano para comenzar a girar con el mismo en pos de su presentación.</p>			
+		<p><strong>The Aberdeens</strong> es una banda formada en Buenos Aires, a fines del 2010. Con varios temas en las manos, la banda comienza a trabajar rápidamente proyectando sus primeros conciertos y comenzando a dar forma a su primer disco.</p>
+		<p>Luego de sonar en varios de los escenarios de C.A.B.A. y Buenos Aires junto a bandas como Juana la Loca, Fantasmagoria, Utopians, Jordan, Superuva, Francisco Bochatón, entre otras; arrancan el 2014 con su disco en mano para comenzar a girar con el mismo en pos de su presentación.</p>			
 	</div>
 	<div class="pure-u-1 musicians">
 		<div class="pure-g">
@@ -36,10 +60,10 @@
 						<p class="name">Nicolás Lisanti</p>
 						<div class="pure-g skills">
 							<div class="pure-u-4-5">
-							<p>Guitarra y voz.</p>
+								<p>Guitarra y voz.</p>
 							</div>
 							<div class="pure-u-1-5">
-								<a href="#" target="_blank">
+								<a href="https://twitter.com/" target="_blank">
 									<i class="fa fa-twitter"></i>
 								</a>
 							</div>
@@ -64,7 +88,7 @@
 								<p>Bajo y coros.</p>							
 							</div>
 							<div class="pure-u-1-5">
-								<a href="#" target="_blank">
+								<a href="https://twitter.com/" target="_blank">
 									<i class="fa fa-twitter"></i>								
 								</a>
 							</div>
@@ -89,7 +113,7 @@
 								<p>Bateria y coros.</p>							
 							</div>
 							<div class="pure-u-1-5">
-								<a href="#" target="_blank">
+								<a href="https://twitter.com/" target="_blank">
 									<i class="fa fa-twitter"></i>								
 								</a>
 							</div>
@@ -106,7 +130,6 @@
 			</div>
 		</div>
 	</div>
-</div>
 </div>
 
 {% endblock %}
