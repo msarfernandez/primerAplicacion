@@ -3,8 +3,15 @@
 	border-bottom 5px solid _orange
 	border-top 5px solid _orange
 	margin 50px 0
-	padding 50px 10px 25px
+	padding-top 50px
 	text-align left
+
+	& > div
+		padding 0 10px
+	
+	a, p
+		font-size .8em
+		font-style italic
 
 	h2
 		font-family 'Fjalla One', sans-serif
@@ -30,6 +37,60 @@
 		margin 50px 0
 		text-transform uppercase
 
-	p
-		font-size .8em
-		font-style italic
+	.musicians
+		background #F3F3F5
+		border-top 3px solid _darkgray
+		margin 50px 0 0
+		padding 0 10px
+
+		.musician
+			background _white
+			box-shadow 0 0 10px rgba(0, 0, 0, .2)
+			margin 25px 0 50px
+
+			img
+				margin-top 0
+
+			p.name
+				font-size 1em
+				font-weight bold
+				text-align center
+				text-transform uppercase
+
+			.information
+				border-top 1px solid _darkgray
+				margin-top 25px
+
+				a
+					color _orange
+					display block
+					font-weight bold
+					padding 10px 0
+					text-align center
+					text-decoration none
+
+				p
+					display none
+					font-size .7em
+					margin-top 25px
+
+			.pure-u-2-3
+				padding 0 10px
+
+			.skills
+				margin 10px 0
+				
+				a
+					color _orange
+
+					i
+						font-size 30px
+
+				p
+					margin 3px 0 0
+
+				.pure-u-1-5
+					text-align right
+
+	.pictures
+		margin-bottom 25px
