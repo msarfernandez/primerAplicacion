@@ -9341,7 +9341,7 @@ d[0].offsetTop||15===d[0].offsetTop;d.remove();a.fixedPosition=e}f.extend(b.defa
 
 }).call(this);
 
-$(window).on("load", function(){
+$(document).on("ready", function(){
 
 	console.log("Funciona!");
 

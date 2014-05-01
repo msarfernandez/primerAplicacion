@@ -140,15 +140,19 @@
 				p
 					margin 0
 
+			.show-img
+				margin-top 0
+
 	.pictures
 		margin-bottom 25px
 
 	.show-img
 		display block
+		margin-top 25px
 		overflow hidden
 
 		&:hover img
-			transform scale(1.05)
+			transform scale(1.05) rotate(-1deg)
 
 		img
 			applyTransition(0.5s, ease)
