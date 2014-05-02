@@ -1,38 +1,41 @@
 [
-    {
-        "title": "Presentando algunos temas nuevos!",
-        "type": "Show",
-        "day": "25",
-        "month": "marzo",
-        "imageURL": "/assets/images/event-1.jpg",
-        "description": "Este es el texto descriptivo de un evento. Este es el texto descriptivo de un evento. Este es el texto descriptivo de un evento. Este es el texto descriptivo de un evento. Este es el texto descriptivo de un evento.",
-        "place": "San Miguel.",
-        "hour": "22:30 hs.",
-        "mapURL": "https://www.google.com.ar/",
-        "eventURL": "https://www.google.com.ar/"
-    },
-    {
-        "title": "Show en vivo junto a Altares y Tinte Gris",
-        "type": "News",
-        "day": "6",
-        "month": "abril",
-        "imageURL": "/assets/images/event-2.jpg",
-        "description": "Este es el texto descriptivo de un evento, en Capital Federal. Este es el texto descriptivo de un evento, en Capital Federal. Este es el texto descriptivo de un evento, en Capital Federal.",
-        "place": "Colegiales, C.A.B.A.",
-        "hour": "00:30 hs.",
-        "mapURL": "https://www.google.com.ar/",
-        "eventURL": "https://www.google.com.ar/"
-    },
-    {
-        "title": "Show en vivo por mi cumpleaños",
-        "type": "Show",
-        "day": "6",
-        "month": "mayo",
-        "imageURL": "/assets/images/event-3.jpg",
-        "description": "Ojalá que ese día no llueva porque es en el patio.",
-        "place": "Tortuguitas.",
-        "hour": "23:00 hs.",
-        "mapURL": "https://www.google.com.ar/",
-        "eventURL": "https://www.google.com.ar/"
-    }
+  {
+    "title": "Presentando algunos temas nuevos!",
+    "type": "Show",
+    "day": "25",
+    "month": "mar",
+    "mediaType": "image",
+    "url": "/assets/images/event-1.jpg",
+    "description": "Este es el texto descriptivo de un evento. Este es el texto descriptivo de un evento. Este es el texto descriptivo de un evento. Este es el texto descriptivo de un evento. Este es el texto descriptivo de un evento.",
+    "place": "San Miguel.",
+    "hour": "22:30 hs.",
+    "mapURL": "https://www.google.com.ar/maps/place/San+Miguel",
+    "eventURL": "https://www.facebook.com/los.aberdeens"
+  },
+  {
+    "title": "Estuvimos en el canal de la música",
+    "type": "News",
+    "day": "6",
+    "month": "abr",
+    "mediaType": "video",
+    "url": "//www.youtube.com/embed/lIktA3TFaQQ?rel=0",
+    "description": "Este es el texto descriptivo de un evento, en Capital Federal. Este es el texto descriptivo de un evento, en Capital Federal. Este es el texto descriptivo de un evento, en Capital Federal.",
+    "place": "Colegiales, C.A.B.A.",
+    "hour": "00:30 hs.",
+    "mapURL": "https://www.google.com.ar/maps/place/San+Miguel",
+    "eventURL": "https://www.facebook.com/los.aberdeens"
+  },
+  {
+    "title": "Show en vivo por mi cumpleaños",
+    "type": "Show",
+    "day": "6",
+    "month": "may",
+    "mediaType": "image",
+    "url": "/assets/images/event-3.jpg",
+    "description": "Ojalá que ese día no llueva porque es en el patio.",
+    "place": "Tortuguitas.",
+    "hour": "23:00 hs.",
+    "mapURL": "https://www.google.com.ar/maps/place/San+Miguel",
+    "eventURL": "https://www.facebook.com/los.aberdeens"
+  }
 ]

@@ -1,7 +1,5 @@
-<a href="{{event.imageURL}}" title="{{event.title}}" class="show-img wow fadeInUp">
-	<img src="{{event.imageURL}}" alt="{{event.title}}">
-</a>
 <p class="event-description wow fadeInUp">{{event.description}}</p>
+{% if event.type|lower === "show" %}
 <p class="wow fadeInUp">Fecha: <span class="bold">{{event.day}} de {{event.month}} - {{event.hour}}</span></p>
 <p class="wow fadeInUp">Lugar: <span class="bold">{{event.place}}</span></p>
 <div class="pure-g links">
@@ -22,3 +20,4 @@
 		</p>
 	</div>
 </div>
+{% endif %}

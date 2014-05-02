@@ -19,7 +19,7 @@
 								<p>Guitarra y voz.</p>
 							</div>
 							<div class="pure-u-1-3">
-								<a href="https://twitter.com/" target="_blank">
+								<a href="https://twitter.com/LosAberdeens" target="_blank">
 									<i class="fa fa-twitter"></i>
 								</a>
 							</div>
@@ -46,8 +46,8 @@
 								<p>Bajo y coros.</p>							
 							</div>
 							<div class="pure-u-1-3">
-								<a href="https://twitter.com/" target="_blank">
-									<i class="fa fa-twitter"></i>								
+								<a href="https://twitter.com/Sebasezeavila" target="_blank">
+									<i class="fa fa-twitter"></i>
 								</a>
 							</div>
 						</div>
@@ -73,8 +73,8 @@
 								<p>Bateria y coros.</p>
 							</div>
 							<div class="pure-u-1-3">
-								<a href="https://twitter.com/" target="_blank">
-									<i class="fa fa-twitter"></i>								
+								<a href="https://twitter.com/msarfernandez" target="_blank">
+									<i class="fa fa-twitter"></i>
 								</a>
 							</div>
 						</div>

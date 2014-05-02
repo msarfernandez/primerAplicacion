@@ -119,16 +119,33 @@
 				border-bottom 1px solid _darkgray
 				border-top 1px solid _darkgray
 				
+				.center
+					text-align center
+
 				.date
 					color _darkgray
 					font-size .8em
 					font-weight bold
+					text-transform uppercase
 
 					.day
 						margin-right 5px
 
 				.link
 					text-align right
+
+				.tag
+					background _darkgray
+					color _white
+					font-size .8em
+					padding 5px 2px 5px 5px
+					text-shadow 1px 1px 1px rgba(0, 0, 0, .3)
+
+					&.news
+						background _newsTag
+
+					&.show
+						background _showTag
 
 			.event-info
 				padding 0 0 15px
@@ -138,6 +155,7 @@
 
 				.event-description
 					letter-spacing 1px
+					margin-top 0
 
 				.links
 					text-align center
@@ -165,28 +183,16 @@
 							font-size 1.25em
 							margin-left 5px
 
-				.show-img
-					margin-top 0
-
-			.tag
+			.media-content
 				margin 25px 0
+				
+				iframe
+					height 100%
+					min-height 250px
+					width 100%
 
-				span
-					color _white
-					padding 8px 15px 10px 15px
-					text-shadow 1px 1px 1px rgba(0, 0, 0, .3)
-
-					&.news
-						background _newsTag
-
-						&:hover
-							background darken(_newsTag, 15%)
-
-					&.show
-						background _showTag
-
-						&:hover
-							background darken(_showTag, 15%)
+				.show-img
+					margin 0
 
 	.link
 		color _orange

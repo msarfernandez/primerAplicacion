@@ -13,13 +13,17 @@
 				<a href="#" class="link">
 					<h3 class="wow fadeInUp">{{event.title}}</h3>
 				</a>
-				<p class="tag wow fadeInUp">
-					{% if event.type|lower === "show" %}
-						<span class="show">{{event.type}}</span>
-					{% else %}
-						<span class="news">{{event.type}}</span>
-					{% endif %}
-				</p>
+				{% if event.mediaType|lower === "image" %}
+					<div class="media-content">
+						<a href="{{event.url}}" title="{{event.title}}" class="show-img wow fadeInUp">
+							<img src="{{event.url}}" alt="{{event.title}}">
+						</a>
+					</div>
+				{% else %}
+					<div class="media-content">
+						<iframe src='{{event.url}}' frameborder='0' allowfullscreen></iframe>
+					</div>
+				{% endif %}
 				{% if loop.first %}
 				<div class="pure-u-1 event-info">
 					{% include "event-info.swig" with event %}
@@ -30,11 +34,20 @@
 				</div>
 				{% endif %}
 				<div class="pure-g event-footer">
-					<div class="pure-u-1-2 date wow fadeInUp">
+					<div class="pure-u-7-24 date wow fadeInUp">
 						<span class="day">{{event.day}}</span>
 						<span>{{event.month}}</span>
 					</div>
-					<div class="pure-u-1-2">
+					<div class="pure-u-8-24 date wow fadeInUp center">
+						{% if event.type|lower === "show" %}
+							<span class="tag show wow fadeinUp">{{event.type}}</span>
+						{% elif event.type|lower === "news" %}
+							<span class="tag news wow fadeinUp">{{event.type}}</span>
+						{% else %}
+							<span class="tag wow fadeinUp">{{event.type}}</span>
+						{% endif %}
+					</div>
+					<div class="pure-u-9-24">
 						{% if loop.first %}
 						<a href="#" class="link clicked wow fadeInUp">
 							<span>Ocultar</span>
