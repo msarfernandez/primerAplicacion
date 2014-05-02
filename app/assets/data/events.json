@@ -1,7 +1,7 @@
 [
     {
         "title": "Presentando algunos temas nuevos!",
-        "imageURL": "/assets/images/events/1.jpg",
+        "imageURL": "/assets/images/event-1.jpg",
         "day": "25",
         "month": "marzo",
         "place": "San Miguel.",
@@ -12,12 +12,23 @@
     },
     {
         "title": "Show en vivo junto a Altares y Tinte Gris",
-        "imageURL": "/assets/images/events/2.jpg",
+        "imageURL": "/assets/images/event-2.jpg",
         "day": "6",
         "month": "abril",
         "place": "Colegiales, C.A.B.A.",
         "hour": "00:30 hs.",
         "description": "Este es el texto descriptivo de un evento, en Capital Federal.",
+        "mapURL": "https://www.google.com.ar/",
+        "eventURL": "https://www.google.com.ar/"
+    },
+    {
+        "title": "Show en vivo por mi cumpleaños",
+        "imageURL": "/assets/images/event-3.jpg",
+        "day": "6",
+        "month": "mayo",
+        "place": "Tortuguitas.",
+        "hour": "23:00 hs.",
+        "description": "Ojalá que ese día no llueva porque es en el patio.",
         "mapURL": "https://www.google.com.ar/",
         "eventURL": "https://www.google.com.ar/"
     }
