@@ -9,60 +9,48 @@
 		<div class="pure-g event-list">
 			
 			{% for event in eventsList %}
-
-				<div class="pure-u-1 event wow fadeInUp">
-					<a href="#">
-						<h3>{{event.title}}</h3>
-					</a>
-					<div class="pure-g">
-						<div class="pure-u-1-2 date">
-							<span class="day">{{event.day}}</span>
-							<span>{{event.month}}</span>
-						</div>
-						<div class="pure-u-1-2">
-							<a href="#" class="link">
-								<span>Detalles</span>
-								<i class="fa fa-angle-double-down"></i>
-							</a>
-						</div>
+			<div class="pure-u-1 event wow fadeInUp">
+				<a href="#" class="link">
+					<h3 class="wow fadeInUp">{{event.title}}</h3>
+				</a>
+				<p class="tag wow fadeInUp">
+					{% if event.type|lower === "show" %}
+						<span class="show">{{event.type}}</span>
+					{% else %}
+						<span class="news">{{event.type}}</span>
+					{% endif %}
+				</p>
+				{% if loop.first %}
+				<div class="pure-u-1 event-info">
+					{% include "event-info.swig" with event %}
+				</div>
+				{% else %}
+				<div class="pure-u-1 event-info" style="display: none;">
+					{% include "event-info.swig" with event %}
+				</div>
+				{% endif %}
+				<div class="pure-g event-footer">
+					<div class="pure-u-1-2 date wow fadeInUp">
+						<span class="day">{{event.day}}</span>
+						<span>{{event.month}}</span>
+					</div>
+					<div class="pure-u-1-2">
+						{% if loop.first %}
+						<a href="#" class="link clicked wow fadeInUp">
+							<span>Ocultar</span>
+							<i class="fa fa-angle-double-up"></i>
+						</a>
+						{% else %}
+						<a href="#" class="link wow fadeInUp">
+							<span>Detalles</span>
+							<i class="fa fa-angle-double-down"></i>
+						</a>
+						{% endif %}
 					</div>
 				</div>
-
+			</div>
 			{% endfor %}
 
 		</div>
 	</div>
 </div>
-
-	<!-- {% for event in eventsList %}
-		{% if loop.last && (loop.index % 2) == 0 %}
-			<div class="col-sm-2"></div>
-		{% endif %}
-		<div class="col-xs-12 col-sm-5">
-			<div class="event">
-				<div class="date">
-					<span class="day">{{event.day}}</span>
-					<span>{{event.month|upper}}</span>
-				</div>
-				<h3>{{event.title}}</h3>
-				<a href="{{event.imageURL}}" title="{{event.title}}" class="show-fancybox">
-					<img src="{{event.imageURL}}" alt="Imágen del evento" class="img-responsive">
-				</a>
-				<p class="image-text">[ Haga clic en la foto para ampliar ]</p>
-				<p class="place">Lugar: <span class="bold">{{event.place}}</span></p>
-				<p class="hour">Hora: <span class="bold">{{event.hour}}</span></p>
-				<div class="event-description">
-					<p>{{event.description}}</p>
-					<a href="#" class="link hidden-information">Mostrar info &raquo;</a>
-				</div>
-				<div class="links">
-					<div class="col-xs-6">
-						<a href="{{event.mapURL}}" class="map" target="_blank">Mapa &raquo;</a>
-					</div>
-					<div class="col-xs-6">
-						<a href="{{event.eventURL}}" class="facebook-event" target="_blank">Evento &raquo;</a>
-					</div>
-				</div>
-			</div>			
-		</div>
-	{% endfor %} -->

@@ -17,7 +17,7 @@
 {% block preloader %}
 
 <div id="preloader">
-	<p style="font-family: Arial, sans-serif; font-size: 15px; font-style: italic; margin-top: 100px; text-align: center;">Iniciando algo impresionante...</p>
+	<p style="font-size: 15px; font-style: italic; letter-spacing: 3px; margin-top: 100px; text-align: center;">Iniciando algo impresionante...</p>
 </div>
 
 {% endblock %}

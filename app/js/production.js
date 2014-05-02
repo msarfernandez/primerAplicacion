@@ -9397,4 +9397,26 @@ $(document).on("ready", function(){
 
 		$(this).siblings().slideToggle();
 	});
+
+	// Muestra la información de los eventos
+	$(".event .link").on("click", function (event) {
+		
+		event.preventDefault();
+
+		var eventContainer = $(this).closest(".event");
+		var link = $(eventContainer).find(".event-footer .link");
+
+		if($(link).hasClass("clicked")) {
+
+			$(link).removeClass("clicked");
+			$(link).html("<span>Detalles</span><i class='fa fa-angle-double-down'></i>");
+		}
+		else {
+
+			$(link).addClass("clicked");
+			$(link).html("<span>Ocultar</span><i class='fa fa-angle-double-up'></i>");
+		}
+
+		$(eventContainer).find(".event-info").slideToggle();
+	});
 });

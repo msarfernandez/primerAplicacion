@@ -34,6 +34,7 @@
 					background darken(_orange, 25%)
 
 				i
+					font-size 1.25em
 					margin 0 10px
 
 			h1
@@ -99,31 +100,93 @@
 
 		.event
 			margin 50px 0 25px
-			padding 0 0 10px
-			border-bottom 1px solid _darkgray
 
-			a
+			a:hover h3
+				color _orange
 
-				&:hover h3
-					color _orange
-
-				&.link
-					text-align right
+			.link
+				text-align left
 
 			h3
 				applyTransition(.3s, ease-in-out)
 				color _black
 				font-style normal
 				line-height 1.25em
-				margin 0 0 15px
+				margin 0
 
-			.date
-				color _darkgray
-				font-size .8em
-				font-weight bold
+			.event-footer
+				padding 10px 0
+				border-bottom 1px solid _darkgray
+				border-top 1px solid _darkgray
+				
+				.date
+					color _darkgray
+					font-size .8em
+					font-weight bold
 
-				.day
-					margin-right 5px
+					.day
+						margin-right 5px
+
+				.link
+					text-align right
+
+			.event-info
+				padding 0 0 15px
+
+				.bold
+					font-weight bold
+
+				.event-description
+					letter-spacing 1px
+
+				.links
+					text-align center
+
+					a
+						applyTransition(.5s, ease-in-out)
+						background _orange
+						border 3px solid darken(_orange, 25%)
+						color _white
+						display block
+						font-size 1em
+						padding 5px 0 8px 0
+						margin 0 5px
+						text-shadow 1px 1px 1px rgba(0, 0, 0, .3)
+						text-transform uppercase
+
+						&:hover
+							background darken(_orange, 25%)
+
+						*
+							display inline-block
+							vertical-align middle
+
+						i
+							font-size 1.25em
+							margin-left 5px
+
+				.show-img
+					margin-top 0
+
+			.tag
+				margin 25px 0
+
+				span
+					color _white
+					padding 8px 15px 10px 15px
+					text-shadow 1px 1px 1px rgba(0, 0, 0, .3)
+
+					&.news
+						background _newsTag
+
+						&:hover
+							background darken(_newsTag, 15%)
+
+					&.show
+						background _showTag
+
+						&:hover
+							background darken(_showTag, 15%)
 
 	.link
 		color _orange
@@ -135,13 +198,13 @@
 			margin-left 5px
 
 	.musicians
-		background _gray
+		background url("../assets/images/pattern.png")
 		border-top 3px solid _darkgray
 		margin 50px 0 0
 
 		.musician
 			background _white
-			box-shadow 2px 2px 0 _darkgray
+			box-shadow -2px 2px 0 _darkgray, 2px 2px 0 _darkgray
 			margin 25px 0 50px
 
 			img
