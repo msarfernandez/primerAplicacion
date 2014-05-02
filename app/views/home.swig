@@ -9,6 +9,7 @@
 	{% include "partials/splash.swig" %}
 	{% include "partials/who-we-are.swig" %}
 	{% include "partials/events.swig" with eventsList %}
+	{% include "partials/footer.swig" %}
 
 </div>
 

@@ -14,13 +14,13 @@
 					<h3 class="wow fadeInUp">{{event.title}}</h3>
 				</a>
 				{% if event.mediaType|lower === "image" %}
-					<div class="media-content">
-						<a href="{{event.url}}" title="{{event.title}}" class="show-img wow fadeInUp">
+					<div class="media-content wow fadeInUp">
+						<a href="{{event.url}}" title="{{event.title}}" class="show-img">
 							<img src="{{event.url}}" alt="{{event.title}}">
 						</a>
 					</div>
 				{% else %}
-					<div class="media-content">
+					<div class="media-content wow fadeInUp video">
 						<iframe src='{{event.url}}' frameborder='0' allowfullscreen></iframe>
 					</div>
 				{% endif %}

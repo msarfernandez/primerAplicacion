@@ -76,4 +76,15 @@ $(document).on("ready", function(){
 
 		$(eventContainer).find(".event-info").slideToggle();
 	});
+
+	// Botón del footer. LLeva al inicio
+	$("#up").on("click", function (event) {
+
+		event.preventDefault();
+
+		$('html, body').animate(
+			{ scrollTop: 0 },
+			3000
+		);
+	});
 });
